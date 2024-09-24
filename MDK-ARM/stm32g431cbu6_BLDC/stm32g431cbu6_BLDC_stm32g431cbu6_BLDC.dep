@@ -1,0 +1,1436 @@
+Dependencies for Project 'stm32g431cbu6_BLDC', Target 'stm32g431cbu6_BLDC': (DO NOT MODIFY !)
+CompilerVersion: 5060960::V5.06 update 7 (build 960)::.\ARMCC
+F (startup_stm32g431xx.s)(0x66F16281)(--cpu Cortex-M4.fp.sp -g --apcs=interwork -I.\RTE\_stm32g431cbu6_BLDC-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32G4xx_DFP\1.5.0\Drivers\CMSIS\Device\ST\STM32G4xx\Include--pd "__UVISION_VERSION SETA 536" --pd "_RTE_ SETA 1" --pd "STM32G431xx SETA 1" --pd "_RTE_ SETA 1"--list startup_stm32g431xx.lst --xref -o stm32g431cbu6_bldc\startup_stm32g431xx.o --depend stm32g431cbu6_bldc\startup_stm32g431xx.d)
+F (../Core/Src/main.c)(0x66F21A0D)(--c99 -c --cpu Cortex-M4.fp.sp -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I ../Drivers/CMSIS/Include -I ../USB_Device/App -I ../USB_Device/Target -I ../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I ../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -I ../BLDC/include-I.\RTE\_stm32g431cbu6_BLDC-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32G4xx_DFP\1.5.0\Drivers\CMSIS\Device\ST\STM32G4xx\Include-D__UVISION_VERSION="536" -D_RTE_ -DSTM32G431xx -D_RTE_ -DUSE_FULL_LL_DRIVER -DSTM32G431xx -DARM_MATH_CM4 -D__TARGET_FPU_VFP -DUSE_HAL_DRIVER-o stm32g431cbu6_bldc\main.o --omf_browse stm32g431cbu6_bldc\main.crf --depend stm32g431cbu6_bldc\main.d)
+I (../Core/Inc/main.h)(0x66F0DA66)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal.h)(0x65B343F9)
+I (../Core/Inc/stm32g4xx_hal_conf.h)(0x66F1627F)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_rcc.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_def.h)(0x65B343F9)
+I (../Drivers/CMSIS/Device/ST/STM32G4xx/Include/stm32g4xx.h)(0x65B343F8)
+I (../Drivers/CMSIS/Device/ST/STM32G4xx/Include/stm32g431xx.h)(0x65B343F8)
+I (../Drivers/CMSIS/Include/core_cm4.h)(0x65B343B8)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6025237E)
+I (../Drivers/CMSIS/Include/cmsis_version.h)(0x65B343B8)
+I (../Drivers/CMSIS/Include/cmsis_compiler.h)(0x65B343B8)
+I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x65B343B8)
+I (../Drivers/CMSIS/Include/mpu_armv7.h)(0x65B343B8)
+I (../Drivers/CMSIS/Device/ST/STM32G4xx/Include/system_stm32g4xx.h)(0x65B343F8)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h)(0x65B343F9)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x6025237E)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_rcc_ex.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_gpio.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_gpio_ex.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_dma.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_dma_ex.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_cortex.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_exti.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_flash.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_flash_ex.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_flash_ramfunc.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_pcd.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_usb.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_pcd_ex.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_pwr.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_pwr_ex.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_adc.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_comp.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_exti.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_dac.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_rcc.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_bus.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_crs.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_system.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_cortex.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_utils.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_pwr.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_dma.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_dmamux.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_tim.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_gpio.h)(0x65B343F9)
+I (../USB_Device/App/usb_device.h)(0x66C88867)
+I (../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_def.h)(0x65B343BA)
+I (../USB_Device/Target/usbd_conf.h)(0x66C88867)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x60252374)
+I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x66D524DD)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x6025237E)
+F (../Core/Src/stm32g4xx_it.c)(0x66F15F21)(--c99 -c --cpu Cortex-M4.fp.sp -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I ../Drivers/CMSIS/Include -I ../USB_Device/App -I ../USB_Device/Target -I ../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I ../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -I ../BLDC/include-I.\RTE\_stm32g431cbu6_BLDC-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32G4xx_DFP\1.5.0\Drivers\CMSIS\Device\ST\STM32G4xx\Include-D__UVISION_VERSION="536" -D_RTE_ -DSTM32G431xx -D_RTE_ -DUSE_FULL_LL_DRIVER -DSTM32G431xx -DARM_MATH_CM4 -D__TARGET_FPU_VFP -DUSE_HAL_DRIVER-o stm32g431cbu6_bldc\stm32g4xx_it.o --omf_browse stm32g431cbu6_bldc\stm32g4xx_it.crf --depend stm32g431cbu6_bldc\stm32g4xx_it.d)
+I (../Core/Inc/main.h)(0x66F0DA66)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal.h)(0x65B343F9)
+I (../Core/Inc/stm32g4xx_hal_conf.h)(0x66F1627F)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_rcc.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_def.h)(0x65B343F9)
+I (../Drivers/CMSIS/Device/ST/STM32G4xx/Include/stm32g4xx.h)(0x65B343F8)
+I (../Drivers/CMSIS/Device/ST/STM32G4xx/Include/stm32g431xx.h)(0x65B343F8)
+I (../Drivers/CMSIS/Include/core_cm4.h)(0x65B343B8)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6025237E)
+I (../Drivers/CMSIS/Include/cmsis_version.h)(0x65B343B8)
+I (../Drivers/CMSIS/Include/cmsis_compiler.h)(0x65B343B8)
+I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x65B343B8)
+I (../Drivers/CMSIS/Include/mpu_armv7.h)(0x65B343B8)
+I (../Drivers/CMSIS/Device/ST/STM32G4xx/Include/system_stm32g4xx.h)(0x65B343F8)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h)(0x65B343F9)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x6025237E)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_rcc_ex.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_gpio.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_gpio_ex.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_dma.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_dma_ex.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_cortex.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_exti.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_flash.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_flash_ex.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_flash_ramfunc.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_pcd.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_usb.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_pcd_ex.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_pwr.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_pwr_ex.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_adc.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_comp.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_exti.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_dac.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_rcc.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_bus.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_crs.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_system.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_cortex.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_utils.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_pwr.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_dma.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_dmamux.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_tim.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_gpio.h)(0x65B343F9)
+I (../Core/Inc/stm32g4xx_it.h)(0x66F15F21)
+I (../BLDC/include/bldcTask.h)(0x66F16524)
+I (../BLDC/include/bldcType.h)(0x66F28B0B)
+F (../Core/Src/stm32g4xx_hal_msp.c)(0x66F0E5EF)(--c99 -c --cpu Cortex-M4.fp.sp -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I ../Drivers/CMSIS/Include -I ../USB_Device/App -I ../USB_Device/Target -I ../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I ../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -I ../BLDC/include-I.\RTE\_stm32g431cbu6_BLDC-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32G4xx_DFP\1.5.0\Drivers\CMSIS\Device\ST\STM32G4xx\Include-D__UVISION_VERSION="536" -D_RTE_ -DSTM32G431xx -D_RTE_ -DUSE_FULL_LL_DRIVER -DSTM32G431xx -DARM_MATH_CM4 -D__TARGET_FPU_VFP -DUSE_HAL_DRIVER-o stm32g431cbu6_bldc\stm32g4xx_hal_msp.o --omf_browse stm32g431cbu6_bldc\stm32g4xx_hal_msp.crf --depend stm32g431cbu6_bldc\stm32g4xx_hal_msp.d)
+I (../Core/Inc/main.h)(0x66F0DA66)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal.h)(0x65B343F9)
+I (../Core/Inc/stm32g4xx_hal_conf.h)(0x66F1627F)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_rcc.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_def.h)(0x65B343F9)
+I (../Drivers/CMSIS/Device/ST/STM32G4xx/Include/stm32g4xx.h)(0x65B343F8)
+I (../Drivers/CMSIS/Device/ST/STM32G4xx/Include/stm32g431xx.h)(0x65B343F8)
+I (../Drivers/CMSIS/Include/core_cm4.h)(0x65B343B8)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6025237E)
+I (../Drivers/CMSIS/Include/cmsis_version.h)(0x65B343B8)
+I (../Drivers/CMSIS/Include/cmsis_compiler.h)(0x65B343B8)
+I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x65B343B8)
+I (../Drivers/CMSIS/Include/mpu_armv7.h)(0x65B343B8)
+I (../Drivers/CMSIS/Device/ST/STM32G4xx/Include/system_stm32g4xx.h)(0x65B343F8)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h)(0x65B343F9)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x6025237E)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_rcc_ex.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_gpio.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_gpio_ex.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_dma.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_dma_ex.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_cortex.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_exti.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_flash.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_flash_ex.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_flash_ramfunc.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_pcd.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_usb.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_pcd_ex.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_pwr.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_pwr_ex.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_adc.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_comp.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_exti.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_dac.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_rcc.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_bus.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_crs.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_system.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_cortex.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_utils.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_pwr.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_dma.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_dmamux.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_tim.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_gpio.h)(0x65B343F9)
+F (../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_utils.c)(0x65B343F9)(--c99 -c --cpu Cortex-M4.fp.sp -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I ../Drivers/CMSIS/Include -I ../USB_Device/App -I ../USB_Device/Target -I ../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I ../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -I ../BLDC/include-I.\RTE\_stm32g431cbu6_BLDC-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32G4xx_DFP\1.5.0\Drivers\CMSIS\Device\ST\STM32G4xx\Include-D__UVISION_VERSION="536" -D_RTE_ -DSTM32G431xx -D_RTE_ -DUSE_FULL_LL_DRIVER -DSTM32G431xx -DARM_MATH_CM4 -D__TARGET_FPU_VFP -DUSE_HAL_DRIVER-o stm32g431cbu6_bldc\stm32g4xx_ll_utils.o --omf_browse stm32g431cbu6_bldc\stm32g4xx_ll_utils.crf --depend stm32g431cbu6_bldc\stm32g4xx_ll_utils.d)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_utils.h)(0x65B343F9)
+I (../Drivers/CMSIS/Device/ST/STM32G4xx/Include/stm32g4xx.h)(0x65B343F8)
+I (../Drivers/CMSIS/Device/ST/STM32G4xx/Include/stm32g431xx.h)(0x65B343F8)
+I (../Drivers/CMSIS/Include/core_cm4.h)(0x65B343B8)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6025237E)
+I (../Drivers/CMSIS/Include/cmsis_version.h)(0x65B343B8)
+I (../Drivers/CMSIS/Include/cmsis_compiler.h)(0x65B343B8)
+I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x65B343B8)
+I (../Drivers/CMSIS/Include/mpu_armv7.h)(0x65B343B8)
+I (../Drivers/CMSIS/Device/ST/STM32G4xx/Include/system_stm32g4xx.h)(0x65B343F8)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal.h)(0x65B343F9)
+I (../Core/Inc/stm32g4xx_hal_conf.h)(0x66F1627F)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_rcc.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_def.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h)(0x65B343F9)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x6025237E)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_rcc_ex.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_gpio.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_gpio_ex.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_dma.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_dma_ex.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_cortex.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_exti.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_flash.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_flash_ex.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_flash_ramfunc.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_pcd.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_usb.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_pcd_ex.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_pwr.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_pwr_ex.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_rcc.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_system.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_pwr.h)(0x65B343F9)
+F (../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_exti.c)(0x65B343F9)(--c99 -c --cpu Cortex-M4.fp.sp -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I ../Drivers/CMSIS/Include -I ../USB_Device/App -I ../USB_Device/Target -I ../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I ../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -I ../BLDC/include-I.\RTE\_stm32g431cbu6_BLDC-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32G4xx_DFP\1.5.0\Drivers\CMSIS\Device\ST\STM32G4xx\Include-D__UVISION_VERSION="536" -D_RTE_ -DSTM32G431xx -D_RTE_ -DUSE_FULL_LL_DRIVER -DSTM32G431xx -DARM_MATH_CM4 -D__TARGET_FPU_VFP -DUSE_HAL_DRIVER-o stm32g431cbu6_bldc\stm32g4xx_ll_exti.o --omf_browse stm32g431cbu6_bldc\stm32g4xx_ll_exti.crf --depend stm32g431cbu6_bldc\stm32g4xx_ll_exti.d)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_exti.h)(0x65B343F9)
+I (../Drivers/CMSIS/Device/ST/STM32G4xx/Include/stm32g4xx.h)(0x65B343F8)
+I (../Drivers/CMSIS/Device/ST/STM32G4xx/Include/stm32g431xx.h)(0x65B343F8)
+I (../Drivers/CMSIS/Include/core_cm4.h)(0x65B343B8)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6025237E)
+I (../Drivers/CMSIS/Include/cmsis_version.h)(0x65B343B8)
+I (../Drivers/CMSIS/Include/cmsis_compiler.h)(0x65B343B8)
+I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x65B343B8)
+I (../Drivers/CMSIS/Include/mpu_armv7.h)(0x65B343B8)
+I (../Drivers/CMSIS/Device/ST/STM32G4xx/Include/system_stm32g4xx.h)(0x65B343F8)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal.h)(0x65B343F9)
+I (../Core/Inc/stm32g4xx_hal_conf.h)(0x66F1627F)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_rcc.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_def.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h)(0x65B343F9)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x6025237E)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_rcc_ex.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_gpio.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_gpio_ex.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_dma.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_dma_ex.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_cortex.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_exti.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_flash.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_flash_ex.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_flash_ramfunc.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_pcd.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_usb.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_pcd_ex.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_pwr.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_pwr_ex.h)(0x65B343F9)
+F (../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_gpio.c)(0x65B343F9)(--c99 -c --cpu Cortex-M4.fp.sp -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I ../Drivers/CMSIS/Include -I ../USB_Device/App -I ../USB_Device/Target -I ../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I ../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -I ../BLDC/include-I.\RTE\_stm32g431cbu6_BLDC-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32G4xx_DFP\1.5.0\Drivers\CMSIS\Device\ST\STM32G4xx\Include-D__UVISION_VERSION="536" -D_RTE_ -DSTM32G431xx -D_RTE_ -DUSE_FULL_LL_DRIVER -DSTM32G431xx -DARM_MATH_CM4 -D__TARGET_FPU_VFP -DUSE_HAL_DRIVER-o stm32g431cbu6_bldc\stm32g4xx_ll_gpio.o --omf_browse stm32g431cbu6_bldc\stm32g4xx_ll_gpio.crf --depend stm32g431cbu6_bldc\stm32g4xx_ll_gpio.d)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_gpio.h)(0x65B343F9)
+I (../Drivers/CMSIS/Device/ST/STM32G4xx/Include/stm32g4xx.h)(0x65B343F8)
+I (../Drivers/CMSIS/Device/ST/STM32G4xx/Include/stm32g431xx.h)(0x65B343F8)
+I (../Drivers/CMSIS/Include/core_cm4.h)(0x65B343B8)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6025237E)
+I (../Drivers/CMSIS/Include/cmsis_version.h)(0x65B343B8)
+I (../Drivers/CMSIS/Include/cmsis_compiler.h)(0x65B343B8)
+I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x65B343B8)
+I (../Drivers/CMSIS/Include/mpu_armv7.h)(0x65B343B8)
+I (../Drivers/CMSIS/Device/ST/STM32G4xx/Include/system_stm32g4xx.h)(0x65B343F8)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal.h)(0x65B343F9)
+I (../Core/Inc/stm32g4xx_hal_conf.h)(0x66F1627F)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_rcc.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_def.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h)(0x65B343F9)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x6025237E)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_rcc_ex.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_gpio.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_gpio_ex.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_dma.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_dma_ex.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_cortex.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_exti.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_flash.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_flash_ex.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_flash_ramfunc.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_pcd.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_usb.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_pcd_ex.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_pwr.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_pwr_ex.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_bus.h)(0x65B343F9)
+F (../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pcd.c)(0x65B343F9)(--c99 -c --cpu Cortex-M4.fp.sp -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I ../Drivers/CMSIS/Include -I ../USB_Device/App -I ../USB_Device/Target -I ../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I ../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -I ../BLDC/include-I.\RTE\_stm32g431cbu6_BLDC-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32G4xx_DFP\1.5.0\Drivers\CMSIS\Device\ST\STM32G4xx\Include-D__UVISION_VERSION="536" -D_RTE_ -DSTM32G431xx -D_RTE_ -DUSE_FULL_LL_DRIVER -DSTM32G431xx -DARM_MATH_CM4 -D__TARGET_FPU_VFP -DUSE_HAL_DRIVER-o stm32g431cbu6_bldc\stm32g4xx_hal_pcd.o --omf_browse stm32g431cbu6_bldc\stm32g4xx_hal_pcd.crf --depend stm32g431cbu6_bldc\stm32g4xx_hal_pcd.d)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal.h)(0x65B343F9)
+I (../Core/Inc/stm32g4xx_hal_conf.h)(0x66F1627F)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_rcc.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_def.h)(0x65B343F9)
+I (../Drivers/CMSIS/Device/ST/STM32G4xx/Include/stm32g4xx.h)(0x65B343F8)
+I (../Drivers/CMSIS/Device/ST/STM32G4xx/Include/stm32g431xx.h)(0x65B343F8)
+I (../Drivers/CMSIS/Include/core_cm4.h)(0x65B343B8)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6025237E)
+I (../Drivers/CMSIS/Include/cmsis_version.h)(0x65B343B8)
+I (../Drivers/CMSIS/Include/cmsis_compiler.h)(0x65B343B8)
+I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x65B343B8)
+I (../Drivers/CMSIS/Include/mpu_armv7.h)(0x65B343B8)
+I (../Drivers/CMSIS/Device/ST/STM32G4xx/Include/system_stm32g4xx.h)(0x65B343F8)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h)(0x65B343F9)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x6025237E)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_rcc_ex.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_gpio.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_gpio_ex.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_dma.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_dma_ex.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_cortex.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_exti.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_flash.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_flash_ex.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_flash_ramfunc.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_pcd.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_usb.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_pcd_ex.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_pwr.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_pwr_ex.h)(0x65B343F9)
+F (../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pcd_ex.c)(0x65B343F9)(--c99 -c --cpu Cortex-M4.fp.sp -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I ../Drivers/CMSIS/Include -I ../USB_Device/App -I ../USB_Device/Target -I ../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I ../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -I ../BLDC/include-I.\RTE\_stm32g431cbu6_BLDC-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32G4xx_DFP\1.5.0\Drivers\CMSIS\Device\ST\STM32G4xx\Include-D__UVISION_VERSION="536" -D_RTE_ -DSTM32G431xx -D_RTE_ -DUSE_FULL_LL_DRIVER -DSTM32G431xx -DARM_MATH_CM4 -D__TARGET_FPU_VFP -DUSE_HAL_DRIVER-o stm32g431cbu6_bldc\stm32g4xx_hal_pcd_ex.o --omf_browse stm32g431cbu6_bldc\stm32g4xx_hal_pcd_ex.crf --depend stm32g431cbu6_bldc\stm32g4xx_hal_pcd_ex.d)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal.h)(0x65B343F9)
+I (../Core/Inc/stm32g4xx_hal_conf.h)(0x66F1627F)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_rcc.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_def.h)(0x65B343F9)
+I (../Drivers/CMSIS/Device/ST/STM32G4xx/Include/stm32g4xx.h)(0x65B343F8)
+I (../Drivers/CMSIS/Device/ST/STM32G4xx/Include/stm32g431xx.h)(0x65B343F8)
+I (../Drivers/CMSIS/Include/core_cm4.h)(0x65B343B8)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6025237E)
+I (../Drivers/CMSIS/Include/cmsis_version.h)(0x65B343B8)
+I (../Drivers/CMSIS/Include/cmsis_compiler.h)(0x65B343B8)
+I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x65B343B8)
+I (../Drivers/CMSIS/Include/mpu_armv7.h)(0x65B343B8)
+I (../Drivers/CMSIS/Device/ST/STM32G4xx/Include/system_stm32g4xx.h)(0x65B343F8)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h)(0x65B343F9)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x6025237E)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_rcc_ex.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_gpio.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_gpio_ex.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_dma.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_dma_ex.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_cortex.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_exti.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_flash.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_flash_ex.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_flash_ramfunc.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_pcd.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_usb.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_pcd_ex.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_pwr.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_pwr_ex.h)(0x65B343F9)
+F (../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_usb.c)(0x65B343F9)(--c99 -c --cpu Cortex-M4.fp.sp -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I ../Drivers/CMSIS/Include -I ../USB_Device/App -I ../USB_Device/Target -I ../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I ../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -I ../BLDC/include-I.\RTE\_stm32g431cbu6_BLDC-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32G4xx_DFP\1.5.0\Drivers\CMSIS\Device\ST\STM32G4xx\Include-D__UVISION_VERSION="536" -D_RTE_ -DSTM32G431xx -D_RTE_ -DUSE_FULL_LL_DRIVER -DSTM32G431xx -DARM_MATH_CM4 -D__TARGET_FPU_VFP -DUSE_HAL_DRIVER-o stm32g431cbu6_bldc\stm32g4xx_ll_usb.o --omf_browse stm32g431cbu6_bldc\stm32g4xx_ll_usb.crf --depend stm32g431cbu6_bldc\stm32g4xx_ll_usb.d)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal.h)(0x65B343F9)
+I (../Core/Inc/stm32g4xx_hal_conf.h)(0x66F1627F)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_rcc.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_def.h)(0x65B343F9)
+I (../Drivers/CMSIS/Device/ST/STM32G4xx/Include/stm32g4xx.h)(0x65B343F8)
+I (../Drivers/CMSIS/Device/ST/STM32G4xx/Include/stm32g431xx.h)(0x65B343F8)
+I (../Drivers/CMSIS/Include/core_cm4.h)(0x65B343B8)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6025237E)
+I (../Drivers/CMSIS/Include/cmsis_version.h)(0x65B343B8)
+I (../Drivers/CMSIS/Include/cmsis_compiler.h)(0x65B343B8)
+I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x65B343B8)
+I (../Drivers/CMSIS/Include/mpu_armv7.h)(0x65B343B8)
+I (../Drivers/CMSIS/Device/ST/STM32G4xx/Include/system_stm32g4xx.h)(0x65B343F8)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h)(0x65B343F9)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x6025237E)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_rcc_ex.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_gpio.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_gpio_ex.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_dma.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_dma_ex.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_cortex.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_exti.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_flash.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_flash_ex.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_flash_ramfunc.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_pcd.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_usb.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_pcd_ex.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_pwr.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_pwr_ex.h)(0x65B343F9)
+F (../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal.c)(0x65B343F9)(--c99 -c --cpu Cortex-M4.fp.sp -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I ../Drivers/CMSIS/Include -I ../USB_Device/App -I ../USB_Device/Target -I ../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I ../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -I ../BLDC/include-I.\RTE\_stm32g431cbu6_BLDC-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32G4xx_DFP\1.5.0\Drivers\CMSIS\Device\ST\STM32G4xx\Include-D__UVISION_VERSION="536" -D_RTE_ -DSTM32G431xx -D_RTE_ -DUSE_FULL_LL_DRIVER -DSTM32G431xx -DARM_MATH_CM4 -D__TARGET_FPU_VFP -DUSE_HAL_DRIVER-o stm32g431cbu6_bldc\stm32g4xx_hal.o --omf_browse stm32g431cbu6_bldc\stm32g4xx_hal.crf --depend stm32g431cbu6_bldc\stm32g4xx_hal.d)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal.h)(0x65B343F9)
+I (../Core/Inc/stm32g4xx_hal_conf.h)(0x66F1627F)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_rcc.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_def.h)(0x65B343F9)
+I (../Drivers/CMSIS/Device/ST/STM32G4xx/Include/stm32g4xx.h)(0x65B343F8)
+I (../Drivers/CMSIS/Device/ST/STM32G4xx/Include/stm32g431xx.h)(0x65B343F8)
+I (../Drivers/CMSIS/Include/core_cm4.h)(0x65B343B8)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6025237E)
+I (../Drivers/CMSIS/Include/cmsis_version.h)(0x65B343B8)
+I (../Drivers/CMSIS/Include/cmsis_compiler.h)(0x65B343B8)
+I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x65B343B8)
+I (../Drivers/CMSIS/Include/mpu_armv7.h)(0x65B343B8)
+I (../Drivers/CMSIS/Device/ST/STM32G4xx/Include/system_stm32g4xx.h)(0x65B343F8)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h)(0x65B343F9)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x6025237E)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_rcc_ex.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_gpio.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_gpio_ex.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_dma.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_dma_ex.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_cortex.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_exti.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_flash.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_flash_ex.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_flash_ramfunc.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_pcd.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_usb.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_pcd_ex.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_pwr.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_pwr_ex.h)(0x65B343F9)
+F (../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc.c)(0x65B343F9)(--c99 -c --cpu Cortex-M4.fp.sp -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I ../Drivers/CMSIS/Include -I ../USB_Device/App -I ../USB_Device/Target -I ../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I ../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -I ../BLDC/include-I.\RTE\_stm32g431cbu6_BLDC-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32G4xx_DFP\1.5.0\Drivers\CMSIS\Device\ST\STM32G4xx\Include-D__UVISION_VERSION="536" -D_RTE_ -DSTM32G431xx -D_RTE_ -DUSE_FULL_LL_DRIVER -DSTM32G431xx -DARM_MATH_CM4 -D__TARGET_FPU_VFP -DUSE_HAL_DRIVER-o stm32g431cbu6_bldc\stm32g4xx_hal_rcc.o --omf_browse stm32g431cbu6_bldc\stm32g4xx_hal_rcc.crf --depend stm32g431cbu6_bldc\stm32g4xx_hal_rcc.d)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal.h)(0x65B343F9)
+I (../Core/Inc/stm32g4xx_hal_conf.h)(0x66F1627F)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_rcc.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_def.h)(0x65B343F9)
+I (../Drivers/CMSIS/Device/ST/STM32G4xx/Include/stm32g4xx.h)(0x65B343F8)
+I (../Drivers/CMSIS/Device/ST/STM32G4xx/Include/stm32g431xx.h)(0x65B343F8)
+I (../Drivers/CMSIS/Include/core_cm4.h)(0x65B343B8)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6025237E)
+I (../Drivers/CMSIS/Include/cmsis_version.h)(0x65B343B8)
+I (../Drivers/CMSIS/Include/cmsis_compiler.h)(0x65B343B8)
+I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x65B343B8)
+I (../Drivers/CMSIS/Include/mpu_armv7.h)(0x65B343B8)
+I (../Drivers/CMSIS/Device/ST/STM32G4xx/Include/system_stm32g4xx.h)(0x65B343F8)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h)(0x65B343F9)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x6025237E)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_rcc_ex.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_gpio.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_gpio_ex.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_dma.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_dma_ex.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_cortex.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_exti.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_flash.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_flash_ex.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_flash_ramfunc.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_pcd.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_usb.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_pcd_ex.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_pwr.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_pwr_ex.h)(0x65B343F9)
+F (../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc_ex.c)(0x65B343F9)(--c99 -c --cpu Cortex-M4.fp.sp -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I ../Drivers/CMSIS/Include -I ../USB_Device/App -I ../USB_Device/Target -I ../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I ../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -I ../BLDC/include-I.\RTE\_stm32g431cbu6_BLDC-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32G4xx_DFP\1.5.0\Drivers\CMSIS\Device\ST\STM32G4xx\Include-D__UVISION_VERSION="536" -D_RTE_ -DSTM32G431xx -D_RTE_ -DUSE_FULL_LL_DRIVER -DSTM32G431xx -DARM_MATH_CM4 -D__TARGET_FPU_VFP -DUSE_HAL_DRIVER-o stm32g431cbu6_bldc\stm32g4xx_hal_rcc_ex.o --omf_browse stm32g431cbu6_bldc\stm32g4xx_hal_rcc_ex.crf --depend stm32g431cbu6_bldc\stm32g4xx_hal_rcc_ex.d)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal.h)(0x65B343F9)
+I (../Core/Inc/stm32g4xx_hal_conf.h)(0x66F1627F)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_rcc.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_def.h)(0x65B343F9)
+I (../Drivers/CMSIS/Device/ST/STM32G4xx/Include/stm32g4xx.h)(0x65B343F8)
+I (../Drivers/CMSIS/Device/ST/STM32G4xx/Include/stm32g431xx.h)(0x65B343F8)
+I (../Drivers/CMSIS/Include/core_cm4.h)(0x65B343B8)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6025237E)
+I (../Drivers/CMSIS/Include/cmsis_version.h)(0x65B343B8)
+I (../Drivers/CMSIS/Include/cmsis_compiler.h)(0x65B343B8)
+I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x65B343B8)
+I (../Drivers/CMSIS/Include/mpu_armv7.h)(0x65B343B8)
+I (../Drivers/CMSIS/Device/ST/STM32G4xx/Include/system_stm32g4xx.h)(0x65B343F8)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h)(0x65B343F9)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x6025237E)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_rcc_ex.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_gpio.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_gpio_ex.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_dma.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_dma_ex.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_cortex.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_exti.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_flash.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_flash_ex.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_flash_ramfunc.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_pcd.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_usb.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_pcd_ex.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_pwr.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_pwr_ex.h)(0x65B343F9)
+F (../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash.c)(0x65B343F9)(--c99 -c --cpu Cortex-M4.fp.sp -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I ../Drivers/CMSIS/Include -I ../USB_Device/App -I ../USB_Device/Target -I ../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I ../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -I ../BLDC/include-I.\RTE\_stm32g431cbu6_BLDC-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32G4xx_DFP\1.5.0\Drivers\CMSIS\Device\ST\STM32G4xx\Include-D__UVISION_VERSION="536" -D_RTE_ -DSTM32G431xx -D_RTE_ -DUSE_FULL_LL_DRIVER -DSTM32G431xx -DARM_MATH_CM4 -D__TARGET_FPU_VFP -DUSE_HAL_DRIVER-o stm32g431cbu6_bldc\stm32g4xx_hal_flash.o --omf_browse stm32g431cbu6_bldc\stm32g4xx_hal_flash.crf --depend stm32g431cbu6_bldc\stm32g4xx_hal_flash.d)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal.h)(0x65B343F9)
+I (../Core/Inc/stm32g4xx_hal_conf.h)(0x66F1627F)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_rcc.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_def.h)(0x65B343F9)
+I (../Drivers/CMSIS/Device/ST/STM32G4xx/Include/stm32g4xx.h)(0x65B343F8)
+I (../Drivers/CMSIS/Device/ST/STM32G4xx/Include/stm32g431xx.h)(0x65B343F8)
+I (../Drivers/CMSIS/Include/core_cm4.h)(0x65B343B8)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6025237E)
+I (../Drivers/CMSIS/Include/cmsis_version.h)(0x65B343B8)
+I (../Drivers/CMSIS/Include/cmsis_compiler.h)(0x65B343B8)
+I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x65B343B8)
+I (../Drivers/CMSIS/Include/mpu_armv7.h)(0x65B343B8)
+I (../Drivers/CMSIS/Device/ST/STM32G4xx/Include/system_stm32g4xx.h)(0x65B343F8)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h)(0x65B343F9)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x6025237E)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_rcc_ex.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_gpio.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_gpio_ex.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_dma.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_dma_ex.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_cortex.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_exti.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_flash.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_flash_ex.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_flash_ramfunc.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_pcd.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_usb.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_pcd_ex.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_pwr.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_pwr_ex.h)(0x65B343F9)
+F (../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ex.c)(0x65B343F9)(--c99 -c --cpu Cortex-M4.fp.sp -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I ../Drivers/CMSIS/Include -I ../USB_Device/App -I ../USB_Device/Target -I ../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I ../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -I ../BLDC/include-I.\RTE\_stm32g431cbu6_BLDC-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32G4xx_DFP\1.5.0\Drivers\CMSIS\Device\ST\STM32G4xx\Include-D__UVISION_VERSION="536" -D_RTE_ -DSTM32G431xx -D_RTE_ -DUSE_FULL_LL_DRIVER -DSTM32G431xx -DARM_MATH_CM4 -D__TARGET_FPU_VFP -DUSE_HAL_DRIVER-o stm32g431cbu6_bldc\stm32g4xx_hal_flash_ex.o --omf_browse stm32g431cbu6_bldc\stm32g4xx_hal_flash_ex.crf --depend stm32g431cbu6_bldc\stm32g4xx_hal_flash_ex.d)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal.h)(0x65B343F9)
+I (../Core/Inc/stm32g4xx_hal_conf.h)(0x66F1627F)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_rcc.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_def.h)(0x65B343F9)
+I (../Drivers/CMSIS/Device/ST/STM32G4xx/Include/stm32g4xx.h)(0x65B343F8)
+I (../Drivers/CMSIS/Device/ST/STM32G4xx/Include/stm32g431xx.h)(0x65B343F8)
+I (../Drivers/CMSIS/Include/core_cm4.h)(0x65B343B8)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6025237E)
+I (../Drivers/CMSIS/Include/cmsis_version.h)(0x65B343B8)
+I (../Drivers/CMSIS/Include/cmsis_compiler.h)(0x65B343B8)
+I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x65B343B8)
+I (../Drivers/CMSIS/Include/mpu_armv7.h)(0x65B343B8)
+I (../Drivers/CMSIS/Device/ST/STM32G4xx/Include/system_stm32g4xx.h)(0x65B343F8)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h)(0x65B343F9)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x6025237E)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_rcc_ex.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_gpio.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_gpio_ex.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_dma.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_dma_ex.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_cortex.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_exti.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_flash.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_flash_ex.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_flash_ramfunc.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_pcd.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_usb.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_pcd_ex.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_pwr.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_pwr_ex.h)(0x65B343F9)
+F (../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ramfunc.c)(0x65B343F9)(--c99 -c --cpu Cortex-M4.fp.sp -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I ../Drivers/CMSIS/Include -I ../USB_Device/App -I ../USB_Device/Target -I ../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I ../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -I ../BLDC/include-I.\RTE\_stm32g431cbu6_BLDC-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32G4xx_DFP\1.5.0\Drivers\CMSIS\Device\ST\STM32G4xx\Include-D__UVISION_VERSION="536" -D_RTE_ -DSTM32G431xx -D_RTE_ -DUSE_FULL_LL_DRIVER -DSTM32G431xx -DARM_MATH_CM4 -D__TARGET_FPU_VFP -DUSE_HAL_DRIVER-o stm32g431cbu6_bldc\stm32g4xx_hal_flash_ramfunc.o --omf_browse stm32g431cbu6_bldc\stm32g4xx_hal_flash_ramfunc.crf --depend stm32g431cbu6_bldc\stm32g4xx_hal_flash_ramfunc.d)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal.h)(0x65B343F9)
+I (../Core/Inc/stm32g4xx_hal_conf.h)(0x66F1627F)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_rcc.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_def.h)(0x65B343F9)
+I (../Drivers/CMSIS/Device/ST/STM32G4xx/Include/stm32g4xx.h)(0x65B343F8)
+I (../Drivers/CMSIS/Device/ST/STM32G4xx/Include/stm32g431xx.h)(0x65B343F8)
+I (../Drivers/CMSIS/Include/core_cm4.h)(0x65B343B8)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6025237E)
+I (../Drivers/CMSIS/Include/cmsis_version.h)(0x65B343B8)
+I (../Drivers/CMSIS/Include/cmsis_compiler.h)(0x65B343B8)
+I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x65B343B8)
+I (../Drivers/CMSIS/Include/mpu_armv7.h)(0x65B343B8)
+I (../Drivers/CMSIS/Device/ST/STM32G4xx/Include/system_stm32g4xx.h)(0x65B343F8)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h)(0x65B343F9)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x6025237E)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_rcc_ex.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_gpio.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_gpio_ex.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_dma.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_dma_ex.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_cortex.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_exti.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_flash.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_flash_ex.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_flash_ramfunc.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_pcd.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_usb.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_pcd_ex.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_pwr.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_pwr_ex.h)(0x65B343F9)
+F (../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c)(0x65B343F9)(--c99 -c --cpu Cortex-M4.fp.sp -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I ../Drivers/CMSIS/Include -I ../USB_Device/App -I ../USB_Device/Target -I ../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I ../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -I ../BLDC/include-I.\RTE\_stm32g431cbu6_BLDC-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32G4xx_DFP\1.5.0\Drivers\CMSIS\Device\ST\STM32G4xx\Include-D__UVISION_VERSION="536" -D_RTE_ -DSTM32G431xx -D_RTE_ -DUSE_FULL_LL_DRIVER -DSTM32G431xx -DARM_MATH_CM4 -D__TARGET_FPU_VFP -DUSE_HAL_DRIVER-o stm32g431cbu6_bldc\stm32g4xx_hal_gpio.o --omf_browse stm32g431cbu6_bldc\stm32g4xx_hal_gpio.crf --depend stm32g431cbu6_bldc\stm32g4xx_hal_gpio.d)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal.h)(0x65B343F9)
+I (../Core/Inc/stm32g4xx_hal_conf.h)(0x66F1627F)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_rcc.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_def.h)(0x65B343F9)
+I (../Drivers/CMSIS/Device/ST/STM32G4xx/Include/stm32g4xx.h)(0x65B343F8)
+I (../Drivers/CMSIS/Device/ST/STM32G4xx/Include/stm32g431xx.h)(0x65B343F8)
+I (../Drivers/CMSIS/Include/core_cm4.h)(0x65B343B8)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6025237E)
+I (../Drivers/CMSIS/Include/cmsis_version.h)(0x65B343B8)
+I (../Drivers/CMSIS/Include/cmsis_compiler.h)(0x65B343B8)
+I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x65B343B8)
+I (../Drivers/CMSIS/Include/mpu_armv7.h)(0x65B343B8)
+I (../Drivers/CMSIS/Device/ST/STM32G4xx/Include/system_stm32g4xx.h)(0x65B343F8)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h)(0x65B343F9)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x6025237E)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_rcc_ex.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_gpio.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_gpio_ex.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_dma.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_dma_ex.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_cortex.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_exti.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_flash.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_flash_ex.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_flash_ramfunc.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_pcd.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_usb.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_pcd_ex.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_pwr.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_pwr_ex.h)(0x65B343F9)
+F (../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_exti.c)(0x65B343F9)(--c99 -c --cpu Cortex-M4.fp.sp -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I ../Drivers/CMSIS/Include -I ../USB_Device/App -I ../USB_Device/Target -I ../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I ../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -I ../BLDC/include-I.\RTE\_stm32g431cbu6_BLDC-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32G4xx_DFP\1.5.0\Drivers\CMSIS\Device\ST\STM32G4xx\Include-D__UVISION_VERSION="536" -D_RTE_ -DSTM32G431xx -D_RTE_ -DUSE_FULL_LL_DRIVER -DSTM32G431xx -DARM_MATH_CM4 -D__TARGET_FPU_VFP -DUSE_HAL_DRIVER-o stm32g431cbu6_bldc\stm32g4xx_hal_exti.o --omf_browse stm32g431cbu6_bldc\stm32g4xx_hal_exti.crf --depend stm32g431cbu6_bldc\stm32g4xx_hal_exti.d)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal.h)(0x65B343F9)
+I (../Core/Inc/stm32g4xx_hal_conf.h)(0x66F1627F)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_rcc.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_def.h)(0x65B343F9)
+I (../Drivers/CMSIS/Device/ST/STM32G4xx/Include/stm32g4xx.h)(0x65B343F8)
+I (../Drivers/CMSIS/Device/ST/STM32G4xx/Include/stm32g431xx.h)(0x65B343F8)
+I (../Drivers/CMSIS/Include/core_cm4.h)(0x65B343B8)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6025237E)
+I (../Drivers/CMSIS/Include/cmsis_version.h)(0x65B343B8)
+I (../Drivers/CMSIS/Include/cmsis_compiler.h)(0x65B343B8)
+I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x65B343B8)
+I (../Drivers/CMSIS/Include/mpu_armv7.h)(0x65B343B8)
+I (../Drivers/CMSIS/Device/ST/STM32G4xx/Include/system_stm32g4xx.h)(0x65B343F8)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h)(0x65B343F9)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x6025237E)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_rcc_ex.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_gpio.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_gpio_ex.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_dma.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_dma_ex.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_cortex.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_exti.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_flash.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_flash_ex.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_flash_ramfunc.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_pcd.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_usb.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_pcd_ex.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_pwr.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_pwr_ex.h)(0x65B343F9)
+F (../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma.c)(0x65B343F9)(--c99 -c --cpu Cortex-M4.fp.sp -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I ../Drivers/CMSIS/Include -I ../USB_Device/App -I ../USB_Device/Target -I ../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I ../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -I ../BLDC/include-I.\RTE\_stm32g431cbu6_BLDC-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32G4xx_DFP\1.5.0\Drivers\CMSIS\Device\ST\STM32G4xx\Include-D__UVISION_VERSION="536" -D_RTE_ -DSTM32G431xx -D_RTE_ -DUSE_FULL_LL_DRIVER -DSTM32G431xx -DARM_MATH_CM4 -D__TARGET_FPU_VFP -DUSE_HAL_DRIVER-o stm32g431cbu6_bldc\stm32g4xx_hal_dma.o --omf_browse stm32g431cbu6_bldc\stm32g4xx_hal_dma.crf --depend stm32g431cbu6_bldc\stm32g4xx_hal_dma.d)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal.h)(0x65B343F9)
+I (../Core/Inc/stm32g4xx_hal_conf.h)(0x66F1627F)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_rcc.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_def.h)(0x65B343F9)
+I (../Drivers/CMSIS/Device/ST/STM32G4xx/Include/stm32g4xx.h)(0x65B343F8)
+I (../Drivers/CMSIS/Device/ST/STM32G4xx/Include/stm32g431xx.h)(0x65B343F8)
+I (../Drivers/CMSIS/Include/core_cm4.h)(0x65B343B8)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6025237E)
+I (../Drivers/CMSIS/Include/cmsis_version.h)(0x65B343B8)
+I (../Drivers/CMSIS/Include/cmsis_compiler.h)(0x65B343B8)
+I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x65B343B8)
+I (../Drivers/CMSIS/Include/mpu_armv7.h)(0x65B343B8)
+I (../Drivers/CMSIS/Device/ST/STM32G4xx/Include/system_stm32g4xx.h)(0x65B343F8)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h)(0x65B343F9)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x6025237E)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_rcc_ex.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_gpio.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_gpio_ex.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_dma.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_dma_ex.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_cortex.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_exti.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_flash.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_flash_ex.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_flash_ramfunc.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_pcd.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_usb.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_pcd_ex.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_pwr.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_pwr_ex.h)(0x65B343F9)
+F (../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma_ex.c)(0x65B343F9)(--c99 -c --cpu Cortex-M4.fp.sp -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I ../Drivers/CMSIS/Include -I ../USB_Device/App -I ../USB_Device/Target -I ../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I ../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -I ../BLDC/include-I.\RTE\_stm32g431cbu6_BLDC-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32G4xx_DFP\1.5.0\Drivers\CMSIS\Device\ST\STM32G4xx\Include-D__UVISION_VERSION="536" -D_RTE_ -DSTM32G431xx -D_RTE_ -DUSE_FULL_LL_DRIVER -DSTM32G431xx -DARM_MATH_CM4 -D__TARGET_FPU_VFP -DUSE_HAL_DRIVER-o stm32g431cbu6_bldc\stm32g4xx_hal_dma_ex.o --omf_browse stm32g431cbu6_bldc\stm32g4xx_hal_dma_ex.crf --depend stm32g431cbu6_bldc\stm32g4xx_hal_dma_ex.d)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal.h)(0x65B343F9)
+I (../Core/Inc/stm32g4xx_hal_conf.h)(0x66F1627F)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_rcc.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_def.h)(0x65B343F9)
+I (../Drivers/CMSIS/Device/ST/STM32G4xx/Include/stm32g4xx.h)(0x65B343F8)
+I (../Drivers/CMSIS/Device/ST/STM32G4xx/Include/stm32g431xx.h)(0x65B343F8)
+I (../Drivers/CMSIS/Include/core_cm4.h)(0x65B343B8)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6025237E)
+I (../Drivers/CMSIS/Include/cmsis_version.h)(0x65B343B8)
+I (../Drivers/CMSIS/Include/cmsis_compiler.h)(0x65B343B8)
+I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x65B343B8)
+I (../Drivers/CMSIS/Include/mpu_armv7.h)(0x65B343B8)
+I (../Drivers/CMSIS/Device/ST/STM32G4xx/Include/system_stm32g4xx.h)(0x65B343F8)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h)(0x65B343F9)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x6025237E)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_rcc_ex.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_gpio.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_gpio_ex.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_dma.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_dma_ex.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_cortex.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_exti.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_flash.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_flash_ex.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_flash_ramfunc.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_pcd.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_usb.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_pcd_ex.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_pwr.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_pwr_ex.h)(0x65B343F9)
+F (../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr.c)(0x65B343F9)(--c99 -c --cpu Cortex-M4.fp.sp -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I ../Drivers/CMSIS/Include -I ../USB_Device/App -I ../USB_Device/Target -I ../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I ../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -I ../BLDC/include-I.\RTE\_stm32g431cbu6_BLDC-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32G4xx_DFP\1.5.0\Drivers\CMSIS\Device\ST\STM32G4xx\Include-D__UVISION_VERSION="536" -D_RTE_ -DSTM32G431xx -D_RTE_ -DUSE_FULL_LL_DRIVER -DSTM32G431xx -DARM_MATH_CM4 -D__TARGET_FPU_VFP -DUSE_HAL_DRIVER-o stm32g431cbu6_bldc\stm32g4xx_hal_pwr.o --omf_browse stm32g431cbu6_bldc\stm32g4xx_hal_pwr.crf --depend stm32g431cbu6_bldc\stm32g4xx_hal_pwr.d)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal.h)(0x65B343F9)
+I (../Core/Inc/stm32g4xx_hal_conf.h)(0x66F1627F)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_rcc.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_def.h)(0x65B343F9)
+I (../Drivers/CMSIS/Device/ST/STM32G4xx/Include/stm32g4xx.h)(0x65B343F8)
+I (../Drivers/CMSIS/Device/ST/STM32G4xx/Include/stm32g431xx.h)(0x65B343F8)
+I (../Drivers/CMSIS/Include/core_cm4.h)(0x65B343B8)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6025237E)
+I (../Drivers/CMSIS/Include/cmsis_version.h)(0x65B343B8)
+I (../Drivers/CMSIS/Include/cmsis_compiler.h)(0x65B343B8)
+I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x65B343B8)
+I (../Drivers/CMSIS/Include/mpu_armv7.h)(0x65B343B8)
+I (../Drivers/CMSIS/Device/ST/STM32G4xx/Include/system_stm32g4xx.h)(0x65B343F8)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h)(0x65B343F9)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x6025237E)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_rcc_ex.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_gpio.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_gpio_ex.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_dma.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_dma_ex.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_cortex.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_exti.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_flash.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_flash_ex.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_flash_ramfunc.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_pcd.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_usb.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_pcd_ex.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_pwr.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_pwr_ex.h)(0x65B343F9)
+F (../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr_ex.c)(0x65B343F9)(--c99 -c --cpu Cortex-M4.fp.sp -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I ../Drivers/CMSIS/Include -I ../USB_Device/App -I ../USB_Device/Target -I ../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I ../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -I ../BLDC/include-I.\RTE\_stm32g431cbu6_BLDC-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32G4xx_DFP\1.5.0\Drivers\CMSIS\Device\ST\STM32G4xx\Include-D__UVISION_VERSION="536" -D_RTE_ -DSTM32G431xx -D_RTE_ -DUSE_FULL_LL_DRIVER -DSTM32G431xx -DARM_MATH_CM4 -D__TARGET_FPU_VFP -DUSE_HAL_DRIVER-o stm32g431cbu6_bldc\stm32g4xx_hal_pwr_ex.o --omf_browse stm32g431cbu6_bldc\stm32g4xx_hal_pwr_ex.crf --depend stm32g431cbu6_bldc\stm32g4xx_hal_pwr_ex.d)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal.h)(0x65B343F9)
+I (../Core/Inc/stm32g4xx_hal_conf.h)(0x66F1627F)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_rcc.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_def.h)(0x65B343F9)
+I (../Drivers/CMSIS/Device/ST/STM32G4xx/Include/stm32g4xx.h)(0x65B343F8)
+I (../Drivers/CMSIS/Device/ST/STM32G4xx/Include/stm32g431xx.h)(0x65B343F8)
+I (../Drivers/CMSIS/Include/core_cm4.h)(0x65B343B8)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6025237E)
+I (../Drivers/CMSIS/Include/cmsis_version.h)(0x65B343B8)
+I (../Drivers/CMSIS/Include/cmsis_compiler.h)(0x65B343B8)
+I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x65B343B8)
+I (../Drivers/CMSIS/Include/mpu_armv7.h)(0x65B343B8)
+I (../Drivers/CMSIS/Device/ST/STM32G4xx/Include/system_stm32g4xx.h)(0x65B343F8)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h)(0x65B343F9)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x6025237E)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_rcc_ex.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_gpio.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_gpio_ex.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_dma.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_dma_ex.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_cortex.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_exti.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_flash.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_flash_ex.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_flash_ramfunc.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_pcd.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_usb.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_pcd_ex.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_pwr.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_pwr_ex.h)(0x65B343F9)
+F (../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_cortex.c)(0x65B343F9)(--c99 -c --cpu Cortex-M4.fp.sp -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I ../Drivers/CMSIS/Include -I ../USB_Device/App -I ../USB_Device/Target -I ../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I ../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -I ../BLDC/include-I.\RTE\_stm32g431cbu6_BLDC-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32G4xx_DFP\1.5.0\Drivers\CMSIS\Device\ST\STM32G4xx\Include-D__UVISION_VERSION="536" -D_RTE_ -DSTM32G431xx -D_RTE_ -DUSE_FULL_LL_DRIVER -DSTM32G431xx -DARM_MATH_CM4 -D__TARGET_FPU_VFP -DUSE_HAL_DRIVER-o stm32g431cbu6_bldc\stm32g4xx_hal_cortex.o --omf_browse stm32g431cbu6_bldc\stm32g4xx_hal_cortex.crf --depend stm32g431cbu6_bldc\stm32g4xx_hal_cortex.d)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal.h)(0x65B343F9)
+I (../Core/Inc/stm32g4xx_hal_conf.h)(0x66F1627F)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_rcc.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_def.h)(0x65B343F9)
+I (../Drivers/CMSIS/Device/ST/STM32G4xx/Include/stm32g4xx.h)(0x65B343F8)
+I (../Drivers/CMSIS/Device/ST/STM32G4xx/Include/stm32g431xx.h)(0x65B343F8)
+I (../Drivers/CMSIS/Include/core_cm4.h)(0x65B343B8)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6025237E)
+I (../Drivers/CMSIS/Include/cmsis_version.h)(0x65B343B8)
+I (../Drivers/CMSIS/Include/cmsis_compiler.h)(0x65B343B8)
+I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x65B343B8)
+I (../Drivers/CMSIS/Include/mpu_armv7.h)(0x65B343B8)
+I (../Drivers/CMSIS/Device/ST/STM32G4xx/Include/system_stm32g4xx.h)(0x65B343F8)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h)(0x65B343F9)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x6025237E)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_rcc_ex.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_gpio.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_gpio_ex.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_dma.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_dma_ex.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_cortex.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_exti.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_flash.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_flash_ex.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_flash_ramfunc.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_pcd.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_usb.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_pcd_ex.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_pwr.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_pwr_ex.h)(0x65B343F9)
+F (../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_adc.c)(0x65B343F9)(--c99 -c --cpu Cortex-M4.fp.sp -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I ../Drivers/CMSIS/Include -I ../USB_Device/App -I ../USB_Device/Target -I ../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I ../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -I ../BLDC/include-I.\RTE\_stm32g431cbu6_BLDC-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32G4xx_DFP\1.5.0\Drivers\CMSIS\Device\ST\STM32G4xx\Include-D__UVISION_VERSION="536" -D_RTE_ -DSTM32G431xx -D_RTE_ -DUSE_FULL_LL_DRIVER -DSTM32G431xx -DARM_MATH_CM4 -D__TARGET_FPU_VFP -DUSE_HAL_DRIVER-o stm32g431cbu6_bldc\stm32g4xx_ll_adc.o --omf_browse stm32g431cbu6_bldc\stm32g4xx_ll_adc.crf --depend stm32g431cbu6_bldc\stm32g4xx_ll_adc.d)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_adc.h)(0x65B343F9)
+I (../Drivers/CMSIS/Device/ST/STM32G4xx/Include/stm32g4xx.h)(0x65B343F8)
+I (../Drivers/CMSIS/Device/ST/STM32G4xx/Include/stm32g431xx.h)(0x65B343F8)
+I (../Drivers/CMSIS/Include/core_cm4.h)(0x65B343B8)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6025237E)
+I (../Drivers/CMSIS/Include/cmsis_version.h)(0x65B343B8)
+I (../Drivers/CMSIS/Include/cmsis_compiler.h)(0x65B343B8)
+I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x65B343B8)
+I (../Drivers/CMSIS/Include/mpu_armv7.h)(0x65B343B8)
+I (../Drivers/CMSIS/Device/ST/STM32G4xx/Include/system_stm32g4xx.h)(0x65B343F8)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal.h)(0x65B343F9)
+I (../Core/Inc/stm32g4xx_hal_conf.h)(0x66F1627F)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_rcc.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_def.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h)(0x65B343F9)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x6025237E)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_rcc_ex.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_gpio.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_gpio_ex.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_dma.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_dma_ex.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_cortex.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_exti.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_flash.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_flash_ex.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_flash_ramfunc.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_pcd.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_usb.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_pcd_ex.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_pwr.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_pwr_ex.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_bus.h)(0x65B343F9)
+F (../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_dma.c)(0x65B343F9)(--c99 -c --cpu Cortex-M4.fp.sp -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I ../Drivers/CMSIS/Include -I ../USB_Device/App -I ../USB_Device/Target -I ../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I ../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -I ../BLDC/include-I.\RTE\_stm32g431cbu6_BLDC-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32G4xx_DFP\1.5.0\Drivers\CMSIS\Device\ST\STM32G4xx\Include-D__UVISION_VERSION="536" -D_RTE_ -DSTM32G431xx -D_RTE_ -DUSE_FULL_LL_DRIVER -DSTM32G431xx -DARM_MATH_CM4 -D__TARGET_FPU_VFP -DUSE_HAL_DRIVER-o stm32g431cbu6_bldc\stm32g4xx_ll_dma.o --omf_browse stm32g431cbu6_bldc\stm32g4xx_ll_dma.crf --depend stm32g431cbu6_bldc\stm32g4xx_ll_dma.d)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_dma.h)(0x65B343F9)
+I (../Drivers/CMSIS/Device/ST/STM32G4xx/Include/stm32g4xx.h)(0x65B343F8)
+I (../Drivers/CMSIS/Device/ST/STM32G4xx/Include/stm32g431xx.h)(0x65B343F8)
+I (../Drivers/CMSIS/Include/core_cm4.h)(0x65B343B8)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6025237E)
+I (../Drivers/CMSIS/Include/cmsis_version.h)(0x65B343B8)
+I (../Drivers/CMSIS/Include/cmsis_compiler.h)(0x65B343B8)
+I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x65B343B8)
+I (../Drivers/CMSIS/Include/mpu_armv7.h)(0x65B343B8)
+I (../Drivers/CMSIS/Device/ST/STM32G4xx/Include/system_stm32g4xx.h)(0x65B343F8)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal.h)(0x65B343F9)
+I (../Core/Inc/stm32g4xx_hal_conf.h)(0x66F1627F)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_rcc.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_def.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h)(0x65B343F9)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x6025237E)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_rcc_ex.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_gpio.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_gpio_ex.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_dma.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_dma_ex.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_cortex.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_exti.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_flash.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_flash_ex.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_flash_ramfunc.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_pcd.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_usb.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_pcd_ex.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_pwr.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_pwr_ex.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_dmamux.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_bus.h)(0x65B343F9)
+F (../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_comp.c)(0x65B343F9)(--c99 -c --cpu Cortex-M4.fp.sp -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I ../Drivers/CMSIS/Include -I ../USB_Device/App -I ../USB_Device/Target -I ../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I ../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -I ../BLDC/include-I.\RTE\_stm32g431cbu6_BLDC-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32G4xx_DFP\1.5.0\Drivers\CMSIS\Device\ST\STM32G4xx\Include-D__UVISION_VERSION="536" -D_RTE_ -DSTM32G431xx -D_RTE_ -DUSE_FULL_LL_DRIVER -DSTM32G431xx -DARM_MATH_CM4 -D__TARGET_FPU_VFP -DUSE_HAL_DRIVER-o stm32g431cbu6_bldc\stm32g4xx_ll_comp.o --omf_browse stm32g431cbu6_bldc\stm32g4xx_ll_comp.crf --depend stm32g431cbu6_bldc\stm32g4xx_ll_comp.d)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_comp.h)(0x65B343F9)
+I (../Drivers/CMSIS/Device/ST/STM32G4xx/Include/stm32g4xx.h)(0x65B343F8)
+I (../Drivers/CMSIS/Device/ST/STM32G4xx/Include/stm32g431xx.h)(0x65B343F8)
+I (../Drivers/CMSIS/Include/core_cm4.h)(0x65B343B8)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6025237E)
+I (../Drivers/CMSIS/Include/cmsis_version.h)(0x65B343B8)
+I (../Drivers/CMSIS/Include/cmsis_compiler.h)(0x65B343B8)
+I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x65B343B8)
+I (../Drivers/CMSIS/Include/mpu_armv7.h)(0x65B343B8)
+I (../Drivers/CMSIS/Device/ST/STM32G4xx/Include/system_stm32g4xx.h)(0x65B343F8)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal.h)(0x65B343F9)
+I (../Core/Inc/stm32g4xx_hal_conf.h)(0x66F1627F)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_rcc.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_def.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h)(0x65B343F9)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x6025237E)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_rcc_ex.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_gpio.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_gpio_ex.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_dma.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_dma_ex.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_cortex.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_exti.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_flash.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_flash_ex.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_flash_ramfunc.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_pcd.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_usb.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_pcd_ex.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_pwr.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_pwr_ex.h)(0x65B343F9)
+F (../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_rcc.c)(0x65B343F9)(--c99 -c --cpu Cortex-M4.fp.sp -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I ../Drivers/CMSIS/Include -I ../USB_Device/App -I ../USB_Device/Target -I ../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I ../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -I ../BLDC/include-I.\RTE\_stm32g431cbu6_BLDC-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32G4xx_DFP\1.5.0\Drivers\CMSIS\Device\ST\STM32G4xx\Include-D__UVISION_VERSION="536" -D_RTE_ -DSTM32G431xx -D_RTE_ -DUSE_FULL_LL_DRIVER -DSTM32G431xx -DARM_MATH_CM4 -D__TARGET_FPU_VFP -DUSE_HAL_DRIVER-o stm32g431cbu6_bldc\stm32g4xx_ll_rcc.o --omf_browse stm32g431cbu6_bldc\stm32g4xx_ll_rcc.crf --depend stm32g431cbu6_bldc\stm32g4xx_ll_rcc.d)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_rcc.h)(0x65B343F9)
+I (../Drivers/CMSIS/Device/ST/STM32G4xx/Include/stm32g4xx.h)(0x65B343F8)
+I (../Drivers/CMSIS/Device/ST/STM32G4xx/Include/stm32g431xx.h)(0x65B343F8)
+I (../Drivers/CMSIS/Include/core_cm4.h)(0x65B343B8)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6025237E)
+I (../Drivers/CMSIS/Include/cmsis_version.h)(0x65B343B8)
+I (../Drivers/CMSIS/Include/cmsis_compiler.h)(0x65B343B8)
+I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x65B343B8)
+I (../Drivers/CMSIS/Include/mpu_armv7.h)(0x65B343B8)
+I (../Drivers/CMSIS/Device/ST/STM32G4xx/Include/system_stm32g4xx.h)(0x65B343F8)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal.h)(0x65B343F9)
+I (../Core/Inc/stm32g4xx_hal_conf.h)(0x66F1627F)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_rcc.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_def.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h)(0x65B343F9)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x6025237E)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_rcc_ex.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_gpio.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_gpio_ex.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_dma.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_dma_ex.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_cortex.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_exti.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_flash.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_flash_ex.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_flash_ramfunc.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_pcd.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_usb.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_pcd_ex.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_pwr.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_pwr_ex.h)(0x65B343F9)
+F (../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_dac.c)(0x65B343F9)(--c99 -c --cpu Cortex-M4.fp.sp -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I ../Drivers/CMSIS/Include -I ../USB_Device/App -I ../USB_Device/Target -I ../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I ../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -I ../BLDC/include-I.\RTE\_stm32g431cbu6_BLDC-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32G4xx_DFP\1.5.0\Drivers\CMSIS\Device\ST\STM32G4xx\Include-D__UVISION_VERSION="536" -D_RTE_ -DSTM32G431xx -D_RTE_ -DUSE_FULL_LL_DRIVER -DSTM32G431xx -DARM_MATH_CM4 -D__TARGET_FPU_VFP -DUSE_HAL_DRIVER-o stm32g431cbu6_bldc\stm32g4xx_ll_dac.o --omf_browse stm32g431cbu6_bldc\stm32g4xx_ll_dac.crf --depend stm32g431cbu6_bldc\stm32g4xx_ll_dac.d)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_dac.h)(0x65B343F9)
+I (../Drivers/CMSIS/Device/ST/STM32G4xx/Include/stm32g4xx.h)(0x65B343F8)
+I (../Drivers/CMSIS/Device/ST/STM32G4xx/Include/stm32g431xx.h)(0x65B343F8)
+I (../Drivers/CMSIS/Include/core_cm4.h)(0x65B343B8)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6025237E)
+I (../Drivers/CMSIS/Include/cmsis_version.h)(0x65B343B8)
+I (../Drivers/CMSIS/Include/cmsis_compiler.h)(0x65B343B8)
+I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x65B343B8)
+I (../Drivers/CMSIS/Include/mpu_armv7.h)(0x65B343B8)
+I (../Drivers/CMSIS/Device/ST/STM32G4xx/Include/system_stm32g4xx.h)(0x65B343F8)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal.h)(0x65B343F9)
+I (../Core/Inc/stm32g4xx_hal_conf.h)(0x66F1627F)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_rcc.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_def.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h)(0x65B343F9)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x6025237E)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_rcc_ex.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_gpio.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_gpio_ex.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_dma.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_dma_ex.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_cortex.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_exti.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_flash.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_flash_ex.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_flash_ramfunc.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_pcd.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_usb.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_pcd_ex.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_pwr.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_pwr_ex.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_bus.h)(0x65B343F9)
+F (../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim.c)(0x65B343F9)(--c99 -c --cpu Cortex-M4.fp.sp -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I ../Drivers/CMSIS/Include -I ../USB_Device/App -I ../USB_Device/Target -I ../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I ../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -I ../BLDC/include-I.\RTE\_stm32g431cbu6_BLDC-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32G4xx_DFP\1.5.0\Drivers\CMSIS\Device\ST\STM32G4xx\Include-D__UVISION_VERSION="536" -D_RTE_ -DSTM32G431xx -D_RTE_ -DUSE_FULL_LL_DRIVER -DSTM32G431xx -DARM_MATH_CM4 -D__TARGET_FPU_VFP -DUSE_HAL_DRIVER-o stm32g431cbu6_bldc\stm32g4xx_hal_tim.o --omf_browse stm32g431cbu6_bldc\stm32g4xx_hal_tim.crf --depend stm32g431cbu6_bldc\stm32g4xx_hal_tim.d)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal.h)(0x65B343F9)
+I (../Core/Inc/stm32g4xx_hal_conf.h)(0x66F1627F)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_rcc.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_def.h)(0x65B343F9)
+I (../Drivers/CMSIS/Device/ST/STM32G4xx/Include/stm32g4xx.h)(0x65B343F8)
+I (../Drivers/CMSIS/Device/ST/STM32G4xx/Include/stm32g431xx.h)(0x65B343F8)
+I (../Drivers/CMSIS/Include/core_cm4.h)(0x65B343B8)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6025237E)
+I (../Drivers/CMSIS/Include/cmsis_version.h)(0x65B343B8)
+I (../Drivers/CMSIS/Include/cmsis_compiler.h)(0x65B343B8)
+I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x65B343B8)
+I (../Drivers/CMSIS/Include/mpu_armv7.h)(0x65B343B8)
+I (../Drivers/CMSIS/Device/ST/STM32G4xx/Include/system_stm32g4xx.h)(0x65B343F8)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h)(0x65B343F9)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x6025237E)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_rcc_ex.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_gpio.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_gpio_ex.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_dma.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_dma_ex.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_cortex.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_exti.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_flash.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_flash_ex.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_flash_ramfunc.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_pcd.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_usb.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_pcd_ex.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_pwr.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_pwr_ex.h)(0x65B343F9)
+F (../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim_ex.c)(0x65B343F9)(--c99 -c --cpu Cortex-M4.fp.sp -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I ../Drivers/CMSIS/Include -I ../USB_Device/App -I ../USB_Device/Target -I ../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I ../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -I ../BLDC/include-I.\RTE\_stm32g431cbu6_BLDC-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32G4xx_DFP\1.5.0\Drivers\CMSIS\Device\ST\STM32G4xx\Include-D__UVISION_VERSION="536" -D_RTE_ -DSTM32G431xx -D_RTE_ -DUSE_FULL_LL_DRIVER -DSTM32G431xx -DARM_MATH_CM4 -D__TARGET_FPU_VFP -DUSE_HAL_DRIVER-o stm32g431cbu6_bldc\stm32g4xx_hal_tim_ex.o --omf_browse stm32g431cbu6_bldc\stm32g4xx_hal_tim_ex.crf --depend stm32g431cbu6_bldc\stm32g4xx_hal_tim_ex.d)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal.h)(0x65B343F9)
+I (../Core/Inc/stm32g4xx_hal_conf.h)(0x66F1627F)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_rcc.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_def.h)(0x65B343F9)
+I (../Drivers/CMSIS/Device/ST/STM32G4xx/Include/stm32g4xx.h)(0x65B343F8)
+I (../Drivers/CMSIS/Device/ST/STM32G4xx/Include/stm32g431xx.h)(0x65B343F8)
+I (../Drivers/CMSIS/Include/core_cm4.h)(0x65B343B8)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6025237E)
+I (../Drivers/CMSIS/Include/cmsis_version.h)(0x65B343B8)
+I (../Drivers/CMSIS/Include/cmsis_compiler.h)(0x65B343B8)
+I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x65B343B8)
+I (../Drivers/CMSIS/Include/mpu_armv7.h)(0x65B343B8)
+I (../Drivers/CMSIS/Device/ST/STM32G4xx/Include/system_stm32g4xx.h)(0x65B343F8)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h)(0x65B343F9)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x6025237E)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_rcc_ex.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_gpio.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_gpio_ex.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_dma.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_dma_ex.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_cortex.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_exti.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_flash.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_flash_ex.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_flash_ramfunc.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_pcd.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_usb.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_pcd_ex.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_pwr.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_pwr_ex.h)(0x65B343F9)
+F (../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_tim.c)(0x65B343F9)(--c99 -c --cpu Cortex-M4.fp.sp -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I ../Drivers/CMSIS/Include -I ../USB_Device/App -I ../USB_Device/Target -I ../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I ../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -I ../BLDC/include-I.\RTE\_stm32g431cbu6_BLDC-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32G4xx_DFP\1.5.0\Drivers\CMSIS\Device\ST\STM32G4xx\Include-D__UVISION_VERSION="536" -D_RTE_ -DSTM32G431xx -D_RTE_ -DUSE_FULL_LL_DRIVER -DSTM32G431xx -DARM_MATH_CM4 -D__TARGET_FPU_VFP -DUSE_HAL_DRIVER-o stm32g431cbu6_bldc\stm32g4xx_ll_tim.o --omf_browse stm32g431cbu6_bldc\stm32g4xx_ll_tim.crf --depend stm32g431cbu6_bldc\stm32g4xx_ll_tim.d)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_tim.h)(0x65B343F9)
+I (../Drivers/CMSIS/Device/ST/STM32G4xx/Include/stm32g4xx.h)(0x65B343F8)
+I (../Drivers/CMSIS/Device/ST/STM32G4xx/Include/stm32g431xx.h)(0x65B343F8)
+I (../Drivers/CMSIS/Include/core_cm4.h)(0x65B343B8)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6025237E)
+I (../Drivers/CMSIS/Include/cmsis_version.h)(0x65B343B8)
+I (../Drivers/CMSIS/Include/cmsis_compiler.h)(0x65B343B8)
+I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x65B343B8)
+I (../Drivers/CMSIS/Include/mpu_armv7.h)(0x65B343B8)
+I (../Drivers/CMSIS/Device/ST/STM32G4xx/Include/system_stm32g4xx.h)(0x65B343F8)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal.h)(0x65B343F9)
+I (../Core/Inc/stm32g4xx_hal_conf.h)(0x66F1627F)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_rcc.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_def.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h)(0x65B343F9)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x6025237E)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_rcc_ex.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_gpio.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_gpio_ex.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_dma.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_dma_ex.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_cortex.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_exti.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_flash.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_flash_ex.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_flash_ramfunc.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_pcd.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_usb.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_pcd_ex.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_pwr.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_pwr_ex.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_bus.h)(0x65B343F9)
+F (../Core/Src/system_stm32g4xx.c)(0x65B343F9)(--c99 -c --cpu Cortex-M4.fp.sp -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I ../Drivers/CMSIS/Include -I ../USB_Device/App -I ../USB_Device/Target -I ../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I ../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -I ../BLDC/include-I.\RTE\_stm32g431cbu6_BLDC-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32G4xx_DFP\1.5.0\Drivers\CMSIS\Device\ST\STM32G4xx\Include-D__UVISION_VERSION="536" -D_RTE_ -DSTM32G431xx -D_RTE_ -DUSE_FULL_LL_DRIVER -DSTM32G431xx -DARM_MATH_CM4 -D__TARGET_FPU_VFP -DUSE_HAL_DRIVER-o stm32g431cbu6_bldc\system_stm32g4xx.o --omf_browse stm32g431cbu6_bldc\system_stm32g4xx.crf --depend stm32g431cbu6_bldc\system_stm32g4xx.d)
+I (../Drivers/CMSIS/Device/ST/STM32G4xx/Include/stm32g4xx.h)(0x65B343F8)
+I (../Drivers/CMSIS/Device/ST/STM32G4xx/Include/stm32g431xx.h)(0x65B343F8)
+I (../Drivers/CMSIS/Include/core_cm4.h)(0x65B343B8)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6025237E)
+I (../Drivers/CMSIS/Include/cmsis_version.h)(0x65B343B8)
+I (../Drivers/CMSIS/Include/cmsis_compiler.h)(0x65B343B8)
+I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x65B343B8)
+I (../Drivers/CMSIS/Include/mpu_armv7.h)(0x65B343B8)
+I (../Drivers/CMSIS/Device/ST/STM32G4xx/Include/system_stm32g4xx.h)(0x65B343F8)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal.h)(0x65B343F9)
+I (../Core/Inc/stm32g4xx_hal_conf.h)(0x66F1627F)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_rcc.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_def.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h)(0x65B343F9)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x6025237E)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_rcc_ex.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_gpio.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_gpio_ex.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_dma.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_dma_ex.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_cortex.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_exti.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_flash.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_flash_ex.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_flash_ramfunc.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_pcd.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_usb.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_pcd_ex.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_pwr.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_pwr_ex.h)(0x65B343F9)
+F (../USB_Device/Target/usbd_conf.c)(0x66F0DA66)(--c99 -c --cpu Cortex-M4.fp.sp -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I ../Drivers/CMSIS/Include -I ../USB_Device/App -I ../USB_Device/Target -I ../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I ../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -I ../BLDC/include-I.\RTE\_stm32g431cbu6_BLDC-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32G4xx_DFP\1.5.0\Drivers\CMSIS\Device\ST\STM32G4xx\Include-D__UVISION_VERSION="536" -D_RTE_ -DSTM32G431xx -D_RTE_ -DUSE_FULL_LL_DRIVER -DSTM32G431xx -DARM_MATH_CM4 -D__TARGET_FPU_VFP -DUSE_HAL_DRIVER-o stm32g431cbu6_bldc\usbd_conf.o --omf_browse stm32g431cbu6_bldc\usbd_conf.crf --depend stm32g431cbu6_bldc\usbd_conf.d)
+I (../Drivers/CMSIS/Device/ST/STM32G4xx/Include/stm32g4xx.h)(0x65B343F8)
+I (../Drivers/CMSIS/Device/ST/STM32G4xx/Include/stm32g431xx.h)(0x65B343F8)
+I (../Drivers/CMSIS/Include/core_cm4.h)(0x65B343B8)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6025237E)
+I (../Drivers/CMSIS/Include/cmsis_version.h)(0x65B343B8)
+I (../Drivers/CMSIS/Include/cmsis_compiler.h)(0x65B343B8)
+I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x65B343B8)
+I (../Drivers/CMSIS/Include/mpu_armv7.h)(0x65B343B8)
+I (../Drivers/CMSIS/Device/ST/STM32G4xx/Include/system_stm32g4xx.h)(0x65B343F8)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal.h)(0x65B343F9)
+I (../Core/Inc/stm32g4xx_hal_conf.h)(0x66F1627F)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_rcc.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_def.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h)(0x65B343F9)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x6025237E)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_rcc_ex.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_gpio.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_gpio_ex.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_dma.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_dma_ex.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_cortex.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_exti.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_flash.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_flash_ex.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_flash_ramfunc.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_pcd.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_usb.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_pcd_ex.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_pwr.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_pwr_ex.h)(0x65B343F9)
+I (../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_def.h)(0x65B343BA)
+I (../USB_Device/Target/usbd_conf.h)(0x66C88867)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x60252374)
+I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x66D524DD)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x6025237E)
+I (../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_core.h)(0x65B343BA)
+I (../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_ioreq.h)(0x65B343BA)
+I (../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_ctlreq.h)(0x65B343BA)
+I (../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc/usbd_cdc.h)(0x65B343BA)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_rcc.h)(0x65B343F9)
+F (../USB_Device/App/usb_device.c)(0x66C88867)(--c99 -c --cpu Cortex-M4.fp.sp -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I ../Drivers/CMSIS/Include -I ../USB_Device/App -I ../USB_Device/Target -I ../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I ../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -I ../BLDC/include-I.\RTE\_stm32g431cbu6_BLDC-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32G4xx_DFP\1.5.0\Drivers\CMSIS\Device\ST\STM32G4xx\Include-D__UVISION_VERSION="536" -D_RTE_ -DSTM32G431xx -D_RTE_ -DUSE_FULL_LL_DRIVER -DSTM32G431xx -DARM_MATH_CM4 -D__TARGET_FPU_VFP -DUSE_HAL_DRIVER-o stm32g431cbu6_bldc\usb_device.o --omf_browse stm32g431cbu6_bldc\usb_device.crf --depend stm32g431cbu6_bldc\usb_device.d)
+I (../USB_Device/App/usb_device.h)(0x66C88867)
+I (../Drivers/CMSIS/Device/ST/STM32G4xx/Include/stm32g4xx.h)(0x65B343F8)
+I (../Drivers/CMSIS/Device/ST/STM32G4xx/Include/stm32g431xx.h)(0x65B343F8)
+I (../Drivers/CMSIS/Include/core_cm4.h)(0x65B343B8)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6025237E)
+I (../Drivers/CMSIS/Include/cmsis_version.h)(0x65B343B8)
+I (../Drivers/CMSIS/Include/cmsis_compiler.h)(0x65B343B8)
+I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x65B343B8)
+I (../Drivers/CMSIS/Include/mpu_armv7.h)(0x65B343B8)
+I (../Drivers/CMSIS/Device/ST/STM32G4xx/Include/system_stm32g4xx.h)(0x65B343F8)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal.h)(0x65B343F9)
+I (../Core/Inc/stm32g4xx_hal_conf.h)(0x66F1627F)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_rcc.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_def.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h)(0x65B343F9)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x6025237E)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_rcc_ex.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_gpio.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_gpio_ex.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_dma.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_dma_ex.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_cortex.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_exti.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_flash.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_flash_ex.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_flash_ramfunc.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_pcd.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_usb.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_pcd_ex.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_pwr.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_pwr_ex.h)(0x65B343F9)
+I (../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_def.h)(0x65B343BA)
+I (../USB_Device/Target/usbd_conf.h)(0x66C88867)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x60252374)
+I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x66D524DD)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x6025237E)
+I (../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_core.h)(0x65B343BA)
+I (../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_ioreq.h)(0x65B343BA)
+I (../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_ctlreq.h)(0x65B343BA)
+I (../USB_Device/App/usbd_desc.h)(0x66C88867)
+I (../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc/usbd_cdc.h)(0x65B343BA)
+I (../USB_Device/App/usbd_cdc_if.h)(0x66F123CA)
+F (../USB_Device/App/usbd_desc.c)(0x66C88867)(--c99 -c --cpu Cortex-M4.fp.sp -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I ../Drivers/CMSIS/Include -I ../USB_Device/App -I ../USB_Device/Target -I ../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I ../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -I ../BLDC/include-I.\RTE\_stm32g431cbu6_BLDC-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32G4xx_DFP\1.5.0\Drivers\CMSIS\Device\ST\STM32G4xx\Include-D__UVISION_VERSION="536" -D_RTE_ -DSTM32G431xx -D_RTE_ -DUSE_FULL_LL_DRIVER -DSTM32G431xx -DARM_MATH_CM4 -D__TARGET_FPU_VFP -DUSE_HAL_DRIVER-o stm32g431cbu6_bldc\usbd_desc.o --omf_browse stm32g431cbu6_bldc\usbd_desc.crf --depend stm32g431cbu6_bldc\usbd_desc.d)
+I (../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_core.h)(0x65B343BA)
+I (../USB_Device/Target/usbd_conf.h)(0x66C88867)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x60252374)
+I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x66D524DD)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x6025237E)
+I (../Drivers/CMSIS/Device/ST/STM32G4xx/Include/stm32g4xx.h)(0x65B343F8)
+I (../Drivers/CMSIS/Device/ST/STM32G4xx/Include/stm32g431xx.h)(0x65B343F8)
+I (../Drivers/CMSIS/Include/core_cm4.h)(0x65B343B8)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6025237E)
+I (../Drivers/CMSIS/Include/cmsis_version.h)(0x65B343B8)
+I (../Drivers/CMSIS/Include/cmsis_compiler.h)(0x65B343B8)
+I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x65B343B8)
+I (../Drivers/CMSIS/Include/mpu_armv7.h)(0x65B343B8)
+I (../Drivers/CMSIS/Device/ST/STM32G4xx/Include/system_stm32g4xx.h)(0x65B343F8)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal.h)(0x65B343F9)
+I (../Core/Inc/stm32g4xx_hal_conf.h)(0x66F1627F)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_rcc.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_def.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h)(0x65B343F9)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x6025237E)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_rcc_ex.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_gpio.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_gpio_ex.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_dma.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_dma_ex.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_cortex.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_exti.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_flash.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_flash_ex.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_flash_ramfunc.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_pcd.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_usb.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_pcd_ex.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_pwr.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_pwr_ex.h)(0x65B343F9)
+I (../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_def.h)(0x65B343BA)
+I (../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_ioreq.h)(0x65B343BA)
+I (../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_ctlreq.h)(0x65B343BA)
+I (../USB_Device/App/usbd_desc.h)(0x66C88867)
+F (../USB_Device/App/usbd_cdc_if.c)(0x66F11E9D)(--c99 -c --cpu Cortex-M4.fp.sp -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I ../Drivers/CMSIS/Include -I ../USB_Device/App -I ../USB_Device/Target -I ../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I ../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -I ../BLDC/include-I.\RTE\_stm32g431cbu6_BLDC-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32G4xx_DFP\1.5.0\Drivers\CMSIS\Device\ST\STM32G4xx\Include-D__UVISION_VERSION="536" -D_RTE_ -DSTM32G431xx -D_RTE_ -DUSE_FULL_LL_DRIVER -DSTM32G431xx -DARM_MATH_CM4 -D__TARGET_FPU_VFP -DUSE_HAL_DRIVER-o stm32g431cbu6_bldc\usbd_cdc_if.o --omf_browse stm32g431cbu6_bldc\usbd_cdc_if.crf --depend stm32g431cbu6_bldc\usbd_cdc_if.d)
+I (../USB_Device/App/usbd_cdc_if.h)(0x66F123CA)
+I (../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc/usbd_cdc.h)(0x65B343BA)
+I (../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_ioreq.h)(0x65B343BA)
+I (../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_def.h)(0x65B343BA)
+I (../USB_Device/Target/usbd_conf.h)(0x66C88867)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x60252374)
+I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x66D524DD)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x6025237E)
+I (../Drivers/CMSIS/Device/ST/STM32G4xx/Include/stm32g4xx.h)(0x65B343F8)
+I (../Drivers/CMSIS/Device/ST/STM32G4xx/Include/stm32g431xx.h)(0x65B343F8)
+I (../Drivers/CMSIS/Include/core_cm4.h)(0x65B343B8)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6025237E)
+I (../Drivers/CMSIS/Include/cmsis_version.h)(0x65B343B8)
+I (../Drivers/CMSIS/Include/cmsis_compiler.h)(0x65B343B8)
+I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x65B343B8)
+I (../Drivers/CMSIS/Include/mpu_armv7.h)(0x65B343B8)
+I (../Drivers/CMSIS/Device/ST/STM32G4xx/Include/system_stm32g4xx.h)(0x65B343F8)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal.h)(0x65B343F9)
+I (../Core/Inc/stm32g4xx_hal_conf.h)(0x66F1627F)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_rcc.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_def.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h)(0x65B343F9)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x6025237E)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_rcc_ex.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_gpio.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_gpio_ex.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_dma.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_dma_ex.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_cortex.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_exti.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_flash.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_flash_ex.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_flash_ramfunc.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_pcd.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_usb.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_pcd_ex.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_pwr.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_pwr_ex.h)(0x65B343F9)
+I (../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_core.h)(0x65B343BA)
+I (../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_ctlreq.h)(0x65B343BA)
+F (../Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.c)(0x65B343BA)(--c99 -c --cpu Cortex-M4.fp.sp -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I ../Drivers/CMSIS/Include -I ../USB_Device/App -I ../USB_Device/Target -I ../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I ../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -I ../BLDC/include-I.\RTE\_stm32g431cbu6_BLDC-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32G4xx_DFP\1.5.0\Drivers\CMSIS\Device\ST\STM32G4xx\Include-D__UVISION_VERSION="536" -D_RTE_ -DSTM32G431xx -D_RTE_ -DUSE_FULL_LL_DRIVER -DSTM32G431xx -DARM_MATH_CM4 -D__TARGET_FPU_VFP -DUSE_HAL_DRIVER-o stm32g431cbu6_bldc\usbd_core.o --omf_browse stm32g431cbu6_bldc\usbd_core.crf --depend stm32g431cbu6_bldc\usbd_core.d)
+I (../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_core.h)(0x65B343BA)
+I (../USB_Device/Target/usbd_conf.h)(0x66C88867)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x60252374)
+I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x66D524DD)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x6025237E)
+I (../Drivers/CMSIS/Device/ST/STM32G4xx/Include/stm32g4xx.h)(0x65B343F8)
+I (../Drivers/CMSIS/Device/ST/STM32G4xx/Include/stm32g431xx.h)(0x65B343F8)
+I (../Drivers/CMSIS/Include/core_cm4.h)(0x65B343B8)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6025237E)
+I (../Drivers/CMSIS/Include/cmsis_version.h)(0x65B343B8)
+I (../Drivers/CMSIS/Include/cmsis_compiler.h)(0x65B343B8)
+I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x65B343B8)
+I (../Drivers/CMSIS/Include/mpu_armv7.h)(0x65B343B8)
+I (../Drivers/CMSIS/Device/ST/STM32G4xx/Include/system_stm32g4xx.h)(0x65B343F8)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal.h)(0x65B343F9)
+I (../Core/Inc/stm32g4xx_hal_conf.h)(0x66F1627F)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_rcc.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_def.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h)(0x65B343F9)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x6025237E)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_rcc_ex.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_gpio.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_gpio_ex.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_dma.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_dma_ex.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_cortex.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_exti.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_flash.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_flash_ex.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_flash_ramfunc.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_pcd.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_usb.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_pcd_ex.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_pwr.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_pwr_ex.h)(0x65B343F9)
+I (../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_def.h)(0x65B343BA)
+I (../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_ioreq.h)(0x65B343BA)
+I (../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_ctlreq.h)(0x65B343BA)
+F (../Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ctlreq.c)(0x65B343BA)(--c99 -c --cpu Cortex-M4.fp.sp -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I ../Drivers/CMSIS/Include -I ../USB_Device/App -I ../USB_Device/Target -I ../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I ../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -I ../BLDC/include-I.\RTE\_stm32g431cbu6_BLDC-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32G4xx_DFP\1.5.0\Drivers\CMSIS\Device\ST\STM32G4xx\Include-D__UVISION_VERSION="536" -D_RTE_ -DSTM32G431xx -D_RTE_ -DUSE_FULL_LL_DRIVER -DSTM32G431xx -DARM_MATH_CM4 -D__TARGET_FPU_VFP -DUSE_HAL_DRIVER-o stm32g431cbu6_bldc\usbd_ctlreq.o --omf_browse stm32g431cbu6_bldc\usbd_ctlreq.crf --depend stm32g431cbu6_bldc\usbd_ctlreq.d)
+I (../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_ctlreq.h)(0x65B343BA)
+I (../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_def.h)(0x65B343BA)
+I (../USB_Device/Target/usbd_conf.h)(0x66C88867)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x60252374)
+I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x66D524DD)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x6025237E)
+I (../Drivers/CMSIS/Device/ST/STM32G4xx/Include/stm32g4xx.h)(0x65B343F8)
+I (../Drivers/CMSIS/Device/ST/STM32G4xx/Include/stm32g431xx.h)(0x65B343F8)
+I (../Drivers/CMSIS/Include/core_cm4.h)(0x65B343B8)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6025237E)
+I (../Drivers/CMSIS/Include/cmsis_version.h)(0x65B343B8)
+I (../Drivers/CMSIS/Include/cmsis_compiler.h)(0x65B343B8)
+I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x65B343B8)
+I (../Drivers/CMSIS/Include/mpu_armv7.h)(0x65B343B8)
+I (../Drivers/CMSIS/Device/ST/STM32G4xx/Include/system_stm32g4xx.h)(0x65B343F8)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal.h)(0x65B343F9)
+I (../Core/Inc/stm32g4xx_hal_conf.h)(0x66F1627F)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_rcc.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_def.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h)(0x65B343F9)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x6025237E)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_rcc_ex.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_gpio.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_gpio_ex.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_dma.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_dma_ex.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_cortex.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_exti.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_flash.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_flash_ex.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_flash_ramfunc.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_pcd.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_usb.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_pcd_ex.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_pwr.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_pwr_ex.h)(0x65B343F9)
+I (../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_ioreq.h)(0x65B343BA)
+I (../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_core.h)(0x65B343BA)
+F (../Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ioreq.c)(0x65B343BA)(--c99 -c --cpu Cortex-M4.fp.sp -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I ../Drivers/CMSIS/Include -I ../USB_Device/App -I ../USB_Device/Target -I ../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I ../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -I ../BLDC/include-I.\RTE\_stm32g431cbu6_BLDC-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32G4xx_DFP\1.5.0\Drivers\CMSIS\Device\ST\STM32G4xx\Include-D__UVISION_VERSION="536" -D_RTE_ -DSTM32G431xx -D_RTE_ -DUSE_FULL_LL_DRIVER -DSTM32G431xx -DARM_MATH_CM4 -D__TARGET_FPU_VFP -DUSE_HAL_DRIVER-o stm32g431cbu6_bldc\usbd_ioreq.o --omf_browse stm32g431cbu6_bldc\usbd_ioreq.crf --depend stm32g431cbu6_bldc\usbd_ioreq.d)
+I (../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_ioreq.h)(0x65B343BA)
+I (../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_def.h)(0x65B343BA)
+I (../USB_Device/Target/usbd_conf.h)(0x66C88867)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x60252374)
+I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x66D524DD)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x6025237E)
+I (../Drivers/CMSIS/Device/ST/STM32G4xx/Include/stm32g4xx.h)(0x65B343F8)
+I (../Drivers/CMSIS/Device/ST/STM32G4xx/Include/stm32g431xx.h)(0x65B343F8)
+I (../Drivers/CMSIS/Include/core_cm4.h)(0x65B343B8)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6025237E)
+I (../Drivers/CMSIS/Include/cmsis_version.h)(0x65B343B8)
+I (../Drivers/CMSIS/Include/cmsis_compiler.h)(0x65B343B8)
+I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x65B343B8)
+I (../Drivers/CMSIS/Include/mpu_armv7.h)(0x65B343B8)
+I (../Drivers/CMSIS/Device/ST/STM32G4xx/Include/system_stm32g4xx.h)(0x65B343F8)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal.h)(0x65B343F9)
+I (../Core/Inc/stm32g4xx_hal_conf.h)(0x66F1627F)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_rcc.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_def.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h)(0x65B343F9)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x6025237E)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_rcc_ex.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_gpio.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_gpio_ex.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_dma.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_dma_ex.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_cortex.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_exti.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_flash.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_flash_ex.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_flash_ramfunc.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_pcd.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_usb.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_pcd_ex.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_pwr.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_pwr_ex.h)(0x65B343F9)
+I (../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_core.h)(0x65B343BA)
+I (../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_ctlreq.h)(0x65B343BA)
+F (../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Src/usbd_cdc.c)(0x65B343BA)(--c99 -c --cpu Cortex-M4.fp.sp -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I ../Drivers/CMSIS/Include -I ../USB_Device/App -I ../USB_Device/Target -I ../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I ../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -I ../BLDC/include-I.\RTE\_stm32g431cbu6_BLDC-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32G4xx_DFP\1.5.0\Drivers\CMSIS\Device\ST\STM32G4xx\Include-D__UVISION_VERSION="536" -D_RTE_ -DSTM32G431xx -D_RTE_ -DUSE_FULL_LL_DRIVER -DSTM32G431xx -DARM_MATH_CM4 -D__TARGET_FPU_VFP -DUSE_HAL_DRIVER-o stm32g431cbu6_bldc\usbd_cdc.o --omf_browse stm32g431cbu6_bldc\usbd_cdc.crf --depend stm32g431cbu6_bldc\usbd_cdc.d)
+I (../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc/usbd_cdc.h)(0x65B343BA)
+I (../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_ioreq.h)(0x65B343BA)
+I (../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_def.h)(0x65B343BA)
+I (../USB_Device/Target/usbd_conf.h)(0x66C88867)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x60252374)
+I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x66D524DD)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x6025237E)
+I (../Drivers/CMSIS/Device/ST/STM32G4xx/Include/stm32g4xx.h)(0x65B343F8)
+I (../Drivers/CMSIS/Device/ST/STM32G4xx/Include/stm32g431xx.h)(0x65B343F8)
+I (../Drivers/CMSIS/Include/core_cm4.h)(0x65B343B8)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6025237E)
+I (../Drivers/CMSIS/Include/cmsis_version.h)(0x65B343B8)
+I (../Drivers/CMSIS/Include/cmsis_compiler.h)(0x65B343B8)
+I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x65B343B8)
+I (../Drivers/CMSIS/Include/mpu_armv7.h)(0x65B343B8)
+I (../Drivers/CMSIS/Device/ST/STM32G4xx/Include/system_stm32g4xx.h)(0x65B343F8)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal.h)(0x65B343F9)
+I (../Core/Inc/stm32g4xx_hal_conf.h)(0x66F1627F)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_rcc.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_def.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h)(0x65B343F9)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x6025237E)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_rcc_ex.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_gpio.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_gpio_ex.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_dma.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_dma_ex.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_cortex.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_exti.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_flash.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_flash_ex.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_flash_ramfunc.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_pcd.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_usb.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_pcd_ex.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_pwr.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_pwr_ex.h)(0x65B343F9)
+I (../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_core.h)(0x65B343BA)
+I (../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_ctlreq.h)(0x65B343BA)
+F (..\BLDC\interface\bldcInterface.c)(0x66F2AF0F)(--c99 -c --cpu Cortex-M4.fp.sp -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I ../Drivers/CMSIS/Include -I ../USB_Device/App -I ../USB_Device/Target -I ../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I ../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -I ../BLDC/include-I.\RTE\_stm32g431cbu6_BLDC-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32G4xx_DFP\1.5.0\Drivers\CMSIS\Device\ST\STM32G4xx\Include-D__UVISION_VERSION="536" -D_RTE_ -DSTM32G431xx -D_RTE_ -DUSE_FULL_LL_DRIVER -DSTM32G431xx -DARM_MATH_CM4 -D__TARGET_FPU_VFP -DUSE_HAL_DRIVER-o stm32g431cbu6_bldc\bldcinterface.o --omf_browse stm32g431cbu6_bldc\bldcinterface.crf --depend stm32g431cbu6_bldc\bldcinterface.d)
+I (..\BLDC\interface\../include/bldcInterface.h)(0x66F16508)
+I (..\BLDC\interface\../include/bldcType.h)(0x66F28B0B)
+I (..\BLDC\interface\../include/bldcTask.h)(0x66F16524)
+I (..\BLDC\interface\../include/bldcSensorless.h)(0x66F2ACCA)
+I (../USB_Device/App/usbd_cdc_if.h)(0x66F123CA)
+I (../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc/usbd_cdc.h)(0x65B343BA)
+I (../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_ioreq.h)(0x65B343BA)
+I (../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_def.h)(0x65B343BA)
+I (../USB_Device/Target/usbd_conf.h)(0x66C88867)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x60252374)
+I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x66D524DD)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x6025237E)
+I (../Drivers/CMSIS/Device/ST/STM32G4xx/Include/stm32g4xx.h)(0x65B343F8)
+I (../Drivers/CMSIS/Device/ST/STM32G4xx/Include/stm32g431xx.h)(0x65B343F8)
+I (../Drivers/CMSIS/Include/core_cm4.h)(0x65B343B8)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6025237E)
+I (../Drivers/CMSIS/Include/cmsis_version.h)(0x65B343B8)
+I (../Drivers/CMSIS/Include/cmsis_compiler.h)(0x65B343B8)
+I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x65B343B8)
+I (../Drivers/CMSIS/Include/mpu_armv7.h)(0x65B343B8)
+I (../Drivers/CMSIS/Device/ST/STM32G4xx/Include/system_stm32g4xx.h)(0x65B343F8)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal.h)(0x65B343F9)
+I (../Core/Inc/stm32g4xx_hal_conf.h)(0x66F1627F)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_rcc.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_def.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h)(0x65B343F9)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x6025237E)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_rcc_ex.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_gpio.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_gpio_ex.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_dma.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_dma_ex.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_cortex.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_exti.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_flash.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_flash_ex.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_flash_ramfunc.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_pcd.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_usb.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_pcd_ex.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_pwr.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_pwr_ex.h)(0x65B343F9)
+I (../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_core.h)(0x65B343BA)
+I (../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_ctlreq.h)(0x65B343BA)
+I (../Core/Inc/main.h)(0x66F0DA66)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_adc.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_comp.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_exti.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_dac.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_rcc.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_bus.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_crs.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_system.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_cortex.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_utils.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_pwr.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_dma.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_dmamux.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_tim.h)(0x65B343F9)
+I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_gpio.h)(0x65B343F9)
+F (..\BLDC\source\bldcSensorless.c)(0x66F2B06B)(--c99 -c --cpu Cortex-M4.fp.sp -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I ../Drivers/CMSIS/Include -I ../USB_Device/App -I ../USB_Device/Target -I ../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I ../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -I ../BLDC/include-I.\RTE\_stm32g431cbu6_BLDC-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32G4xx_DFP\1.5.0\Drivers\CMSIS\Device\ST\STM32G4xx\Include-D__UVISION_VERSION="536" -D_RTE_ -DSTM32G431xx -D_RTE_ -DUSE_FULL_LL_DRIVER -DSTM32G431xx -DARM_MATH_CM4 -D__TARGET_FPU_VFP -DUSE_HAL_DRIVER-o stm32g431cbu6_bldc\bldcsensorless.o --omf_browse stm32g431cbu6_bldc\bldcsensorless.crf --depend stm32g431cbu6_bldc\bldcsensorless.d)
+I (..\BLDC\source\../include/bldcSensorless.h)(0x66F2ACCA)
+I (..\BLDC\source\../include/../include/bldcType.h)(0x66F28B0B)
+I (..\BLDC\source\../include/bldcInterface.h)(0x66F16508)
+I (..\BLDC\source\../include/bldcTask.h)(0x66F16524)
+F (..\BLDC\source\bldcTask.c)(0x66F2B0EA)(--c99 -c --cpu Cortex-M4.fp.sp -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I ../Drivers/CMSIS/Include -I ../USB_Device/App -I ../USB_Device/Target -I ../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I ../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -I ../BLDC/include-I.\RTE\_stm32g431cbu6_BLDC-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32G4xx_DFP\1.5.0\Drivers\CMSIS\Device\ST\STM32G4xx\Include-D__UVISION_VERSION="536" -D_RTE_ -DSTM32G431xx -D_RTE_ -DUSE_FULL_LL_DRIVER -DSTM32G431xx -DARM_MATH_CM4 -D__TARGET_FPU_VFP -DUSE_HAL_DRIVER-o stm32g431cbu6_bldc\bldctask.o --omf_browse stm32g431cbu6_bldc\bldctask.crf --depend stm32g431cbu6_bldc\bldctask.d)
+I (..\BLDC\source\../include/bldcTask.h)(0x66F16524)
+I (..\BLDC\source\../include/bldcType.h)(0x66F28B0B)
+I (..\BLDC\source\../include/bldcInterface.h)(0x66F16508)
+I (..\BLDC\source\../include/bldcMath.h)(0x66C9B94D)
+I (..\BLDC\source\../include/bldcSensorless.h)(0x66F2ACCA)
+F (..\BLDC\source\bldcMath.c)(0x66C9B85A)(--c99 -c --cpu Cortex-M4.fp.sp -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I ../Drivers/CMSIS/Include -I ../USB_Device/App -I ../USB_Device/Target -I ../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I ../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -I ../BLDC/include-I.\RTE\_stm32g431cbu6_BLDC-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32G4xx_DFP\1.5.0\Drivers\CMSIS\Device\ST\STM32G4xx\Include-D__UVISION_VERSION="536" -D_RTE_ -DSTM32G431xx -D_RTE_ -DUSE_FULL_LL_DRIVER -DSTM32G431xx -DARM_MATH_CM4 -D__TARGET_FPU_VFP -DUSE_HAL_DRIVER-o stm32g431cbu6_bldc\bldcmath.o --omf_browse stm32g431cbu6_bldc\bldcmath.crf --depend stm32g431cbu6_bldc\bldcmath.d)
+I (..\BLDC\source\../include/bldcMath.h)(0x66C9B94D)
+I (..\BLDC\source\../include/bldcType.h)(0x66F28B0B)

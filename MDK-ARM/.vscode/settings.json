@@ -1,0 +1,20 @@
+{
+    "files.associations": {
+        "bldcsensorless.h": "c",
+        "bldctype.h": "c",
+        "bldcinterface.h": "c",
+        "bldctask.h": "c",
+        "limits": "c",
+        "memory": "c",
+        "atomic": "c",
+        "bit": "c",
+        "compare": "c",
+        "cstddef": "c",
+        "type_traits": "c",
+        "xmemory": "c",
+        "xstring": "c",
+        "xutility": "c",
+        "bldcmath.h": "c",
+        "usbd_cdc_if.h": "c"
+    }
+}
