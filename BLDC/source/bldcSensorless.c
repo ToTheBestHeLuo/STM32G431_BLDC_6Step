@@ -1,8 +1,8 @@
 /*
  * @Author: error: error: git config user.name & please set dead value or install git && error: git config user.email & please set dead value or install git & please set dead value or install git
  * @Date: 2024-08-24 15:52:21
- * @LastEditors: error: error: git config user.name & please set dead value or install git && error: git config user.email & please set dead value or install git & please set dead value or install git
- * @LastEditTime: 2024-09-24 20:28:27
+ * @LastEditors: ToTheBestHeLuo 2950083986@qq.com
+ * @LastEditTime: 2024-09-25 16:14:52
  * @FilePath: \MDK-ARMd:\stm32cube\stm32g431cbu6_BLDC\BLDC\source\bldcSensorless.c
  * @Description: 
  * 
@@ -16,10 +16,10 @@ PIController spPIController = {
     .userCmd = eBLDC_CMD_IDLE,
     .finalTarget = 0.f,
     .timeCost = 0.f,
-    .kI = 1.f,
-    .kP = 3.f,
-    .limitMax = 8400.f,
-    .limitMin = 499.f,
+    .kI = 100.f,
+    .kP = 4.f,
+    .limitMax = 7000.f / 2.f,
+    .limitMin = 600.f / 2.f,
     .integrator = 0.f,
     .out = 0.f,
     .target = 0.f
@@ -57,6 +57,11 @@ void excuteUserCMD(void)
                 spPIController.userCmd = eBLDC_CMD_IDLE;
             }
             break;
+        case eBLDC_CMD_DIR_REVERSE:
+            bldcSensorlessHandler.forceAlignmentDir = ~bldcSensorlessHandler.forceAlignmentDir;
+            bldcSysHandler.sysStu = eWaitSysReset;
+            spPIController.userCmd = eBLDC_CMD_IDLE;
+            break;
         default:
             break;
     }
@@ -90,14 +95,14 @@ int8_t bldcSensorlessEstSpeed(f32_t floatingPhaseVoltage,f32_t busVoltage,int8_t
 {
     if(floatingPhaseVoltage > busVoltage / 2.f){
         *zeroCrossCnt = *zeroCrossCnt + 1;
-        if(*zeroCrossCnt > 10){
-            *zeroCrossCnt = 10;
+        if(*zeroCrossCnt > 3){
+            *zeroCrossCnt = 3;
             return 1;
         }
     }else{
         *zeroCrossCnt = *zeroCrossCnt - 1;
-        if(*zeroCrossCnt < -10){
-            *zeroCrossCnt = -10;
+        if(*zeroCrossCnt < -3){
+            *zeroCrossCnt = -3;
             return -1;
         }
     }

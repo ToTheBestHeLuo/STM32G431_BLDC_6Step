@@ -1,8 +1,8 @@
 /*
  * @Author: error: error: git config user.name & please set dead value or install git && error: git config user.email & please set dead value or install git & please set dead value or install git
  * @Date: 2024-08-24 15:08:50
- * @LastEditors: error: error: git config user.name & please set dead value or install git && error: git config user.email & please set dead value or install git & please set dead value or install git
- * @LastEditTime: 2024-09-24 16:53:15
+ * @LastEditors: ToTheBestHeLuo 2950083986@qq.com
+ * @LastEditTime: 2024-09-25 15:43:37
  * @FilePath: \MDK-ARMd:\stm32cube\stm32g431cbu6_BLDC\BLDC\include\bldcType.h
  * @Description: 
  * 
@@ -26,7 +26,8 @@ typedef double f64_t;
 
 typedef enum{
     eBLDC_CMD_IDLE = 0,
-    eBLDC_CMD_SPEED_UPDOWN
+    eBLDC_CMD_SPEED_UPDOWN,
+    eBLDC_CMD_DIR_REVERSE
 }BLDC_CMD_Status;
 
 typedef struct 
@@ -43,9 +44,8 @@ typedef struct{
 }BLDC_PWM_Handler;
 
 typedef struct{
-    uint16_t samplingPosition;
     f32_t busVoltage,busCurrent,driverTemp;
-    f32_t floatingPhaseX_Voltage,busCurrentOffset;
+    f32_t floatingPhaseX_Voltage;
 }BLDC_Sensor_Handler;
 
 typedef struct{
@@ -53,8 +53,7 @@ typedef struct{
     int8_t zeroCrossCnt,zeroCrossSignal;
     uint8_t forceAlignmentSector,forceAlignmentDir;
     uint16_t forceAlignmentPwmDuty,forceAlignmentTime;
-    uint16_t maxPwmDuty,minPwmDuty,stepPwmduty;
-    f32_t estSpeed,switchPhaseTime;
+    f32_t estSpeed;
 }BLDC_Sensorless_Handler;
 
 typedef enum{
@@ -72,18 +71,24 @@ typedef enum{
 
 typedef enum{
     eWaitSysReset = -1,
-    eWaitBusVoltage = 0,
-    eWaitCapCharge = 1,
-    eWaitCalADCOffset = 2,
-    eWaitMCStart = 3,
-    eSysRun = 4
+    eWaitBusVoltage,
+    eWaitCapCharge,
+    eWaitMCStart,
+    eSysRun
 }BLDC_SysStateMachine;
+
+typedef enum{
+    eBLDC_ERROR_NONE = 0,
+    eBLDC_ERROR_OC,
+    eBLDC_ERROR_OV,
+    eBLDC_ERROR_UV,
+    eBLDC_ERROR_OT
+}BLDC_SysErrorStatus;
 
 typedef enum{
     eBLDC_ForceAlignment = 0,
     eBLDC_OpenLoop,
     eBLDC_CloseLoopRun,
-    eBLDC_SwitchPhase
 }BLDC_RunStateMachine;
 
 typedef struct 
@@ -92,12 +97,12 @@ typedef struct
     uint32_t safetyTaskTimeCnt;
     uint32_t highSpeedTimeCnt;
     f32_t lowSpeedClock,highSpeedClock,safeBusVoltage;
-    uint8_t isBusCurrenfOffsetFinished;
 
     BLDC_PWM_LowSidesStatus lowSidesStatus;
     BLDC_BEMF_SamplingStatus bemfSamplingStatus;
 
     BLDC_SysStateMachine sysStu;
+    BLDC_SysErrorStatus sysError;
     BLDC_RunStateMachine bldcStu;
 }BLDC_System_Handler;
 

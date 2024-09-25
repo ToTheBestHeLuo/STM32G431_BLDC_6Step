@@ -1,8 +1,8 @@
 /*
  * @Author: error: error: git config user.name & please set dead value or install git && error: git config user.email & please set dead value or install git & please set dead value or install git
  * @Date: 2024-08-24 15:11:33
- * @LastEditors: error: error: git config user.name & please set dead value or install git && error: git config user.email & please set dead value or install git & please set dead value or install git
- * @LastEditTime: 2024-09-23 20:54:25
+ * @LastEditors: ToTheBestHeLuo 2950083986@qq.com
+ * @LastEditTime: 2024-09-25 09:38:50
  * @FilePath: \MDK-ARMd:\stm32cube\stm32g431cbu6_BLDC\BLDC\include\bldcInterface.h
  * @Description: 
  * 
@@ -18,7 +18,7 @@ extern f32_t (*bldcSwitchPhaseTableList_Reverse[6])(uint16_t);
 
 extern void bldc_LowFrequencyTaskCallBack(void);
 extern void bldc_HighFrequencyTaskCallBack(void);
-extern uint8_t bldc_StartOrStopMotor(void);
+extern int8_t bldc_GetButtonStatus(void);
 
 // extern void bldc_PWM_LowSides_OFF_ON_OFF(void);
 // extern void bldc_PWM_LowSides_OFF_OFF_ON(void);
@@ -33,6 +33,7 @@ extern void bldc_StopPWM_AllChannel_HighSides(void);
 extern void bldc_StartPWM_AllChannel_LowSides(void);
 extern void bldc_StopPWM_AllChannel_LowSides(void);
 extern f32_t bldc_GetBusVoltage(void);
+extern f32_t bldc_GetDriverTemp(void);
 extern f32_t bldc_GetBusCurrentAndSetNextSamplingPosition(uint16_t samplingPositionCnt);
 
 #endif
