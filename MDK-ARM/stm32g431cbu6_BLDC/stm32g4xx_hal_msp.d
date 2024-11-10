@@ -35,6 +35,8 @@ stm32g431cbu6_bldc\stm32g4xx_hal_msp.o: ../Drivers/STM32G4xx_HAL_Driver/Inc/stm3
 stm32g431cbu6_bldc\stm32g4xx_hal_msp.o: ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_comp.h
 stm32g431cbu6_bldc\stm32g4xx_hal_msp.o: ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_exti.h
 stm32g431cbu6_bldc\stm32g4xx_hal_msp.o: ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_dac.h
+stm32g431cbu6_bldc\stm32g4xx_hal_msp.o: ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_dma.h
+stm32g431cbu6_bldc\stm32g4xx_hal_msp.o: ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_dmamux.h
 stm32g431cbu6_bldc\stm32g4xx_hal_msp.o: ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_rcc.h
 stm32g431cbu6_bldc\stm32g4xx_hal_msp.o: ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_bus.h
 stm32g431cbu6_bldc\stm32g4xx_hal_msp.o: ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_crs.h
@@ -42,7 +44,5 @@ stm32g431cbu6_bldc\stm32g4xx_hal_msp.o: ../Drivers/STM32G4xx_HAL_Driver/Inc/stm3
 stm32g431cbu6_bldc\stm32g4xx_hal_msp.o: ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_cortex.h
 stm32g431cbu6_bldc\stm32g4xx_hal_msp.o: ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_utils.h
 stm32g431cbu6_bldc\stm32g4xx_hal_msp.o: ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_pwr.h
-stm32g431cbu6_bldc\stm32g4xx_hal_msp.o: ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_dma.h
-stm32g431cbu6_bldc\stm32g4xx_hal_msp.o: ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_dmamux.h
 stm32g431cbu6_bldc\stm32g4xx_hal_msp.o: ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_tim.h
 stm32g431cbu6_bldc\stm32g4xx_hal_msp.o: ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_gpio.h

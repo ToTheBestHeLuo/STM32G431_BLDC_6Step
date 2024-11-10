@@ -2,7 +2,7 @@
  * @Author: error: error: git config user.name & please set dead value or install git && error: git config user.email & please set dead value or install git & please set dead value or install git
  * @Date: 2024-08-24 16:20:16
  * @LastEditors: ToTheBestHeLuo 2950083986@qq.com
- * @LastEditTime: 2024-09-25 16:10:14
+ * @LastEditTime: 2024-11-09 14:09:52
  * @FilePath: \MDK-ARMd:\stm32cube\stm32g431cbu6_BLDC\BLDC\source\bldcTask.c
  * @Description: 
  * 
@@ -12,12 +12,13 @@
 #include "../include/bldcInterface.h"
 #include "../include/bldcMath.h"
 #include "../include/bldcSensorless.h"
+#include "../../dShoot/include/dShoot.h"
 
 BLDC_System_Handler bldcSysHandler = {
     .sysRunTimeCnt = 0,
-    .highSpeedClock = 1.f / 40.f / 1000.f,
+    .highSpeedClock = 1.f / 20.f / 1000.f,
     .lowSpeedClock = 0.001f,
-    .safeBusVoltage = 36.f,
+    .safeBusVoltage = 24.f,
     .highSpeedTimeCnt = 0u,
     .safetyTaskTimeCnt = 0u,
     .lowSidesStatus = eBLDC_UOFF_VOFF_WON,
@@ -35,13 +36,9 @@ BLDC_Sensor_Handler bldcSensorHandler = {
 };
 
 BLDC_Sensorless_Handler bldcSensorlessHandler = {
-    .zeroCrossSignal = 0,
-    .zeroCrossCnt = 0,
     .switchPhaseSignal = 1,
     .forceAlignmentSector = 0u,
     .forceAlignmentDir = 0xff,
-    .forceAlignmentPwmDuty = 200,
-    .forceAlignmentTime = 199,
     .estSpeed = 0.f
 };
 uint8_t bldc_DetermineButtonStatus(void)
@@ -57,12 +54,10 @@ void bldc_SysReset(void)
 {
     bldcSysHandler.bldcStu = eBLDC_ForceAlignment;
     bldcSensorlessHandler.forceAlignmentSector = 0;
-    bldcSensorlessHandler.forceAlignmentPwmDuty = 200;
+    bldcSensorlessHandler.forceAlignmentPwmDuty = 500;
+    bldcSensorlessHandler.forceAlignmentTime = 119,
     spPIController.target = 0.f;
     spPIController.integrator = 0.f;
-    spPIController.finalTarget = 0.f;
-    spPIController.timeCost = 0.f;
-    spPIController.userCmd = eBLDC_CMD_IDLE;
 }
 
 void bldc_SafetyTask(void)
@@ -136,6 +131,7 @@ void bldc_SafetyTask(void)
     }
 
     bldcSysHandler.sysRunTimeCnt++;
+
     bldc_LowFrequencyTaskCallBack();
 }
 
@@ -145,13 +141,13 @@ void bldc_HighFrequencyTask(void)
     int8_t switchPhase;
     static uint32_t tmp = 0u;
     static f32_t timeCost = 0.f;
-    bldcSensorHandler.busCurrent = bldc_GetBusCurrentAndSetNextSamplingPosition(bldcSensorlessHandler.forceAlignmentPwmDuty / 2);
+    bldcSensorHandler.busCurrent = bldc_GetBusCurrentAndSetNextSamplingPosition(240);
     if(bldcSysHandler.sysStu == eSysRun){ 
         switch (bldcSysHandler.bldcStu)
         {
             case eBLDC_ForceAlignment:
                 bldcSwitchPhaseTableList_Forward[0](bldcSensorlessHandler.forceAlignmentPwmDuty);
-                if(bldcSysHandler.highSpeedTimeCnt++ == 1000){
+                if(bldcSysHandler.highSpeedTimeCnt++ == 400){
                     tmp = 0u;estSpeedFilter = 0.f;timeCost = 0.f;
                     bldcSysHandler.highSpeedTimeCnt = 0u;
                     bldcSysHandler.bldcStu = eBLDC_OpenLoop;
@@ -160,17 +156,15 @@ void bldc_HighFrequencyTask(void)
             case eBLDC_OpenLoop:
                 if(bldcSensorlessHandler.forceAlignmentDir){
                     bldcSensorHandler.floatingPhaseX_Voltage = bldcSwitchPhaseTableList_Forward[bldcSensorlessHandler.forceAlignmentSector](bldcSensorlessHandler.forceAlignmentPwmDuty);
-                    // bldcSensorHandler.floatingPhaseX_Voltage = bldc_GetBEMF();
                 }else{
                     bldcSensorHandler.floatingPhaseX_Voltage = bldcSwitchPhaseTableList_Reverse[bldcSensorlessHandler.forceAlignmentSector](bldcSensorlessHandler.forceAlignmentPwmDuty);
-                    // bldcSensorHandler.floatingPhaseX_Voltage = bldc_GetBEMF();
                 }
                 if(bldcSysHandler.highSpeedTimeCnt++ == bldcSensorlessHandler.forceAlignmentTime){
                     bldcSysHandler.highSpeedTimeCnt = 0u;
                     bldcSensorlessHandler.forceAlignmentSector = (bldcSensorlessHandler.forceAlignmentSector + 1) % 6;
                 }
                 timeCost += bldcSysHandler.highSpeedClock;
-                switchPhase = bldcSensorlessEstSpeed(bldcSensorHandler.floatingPhaseX_Voltage,bldcSensorHandler.busVoltage,&bldcSensorlessHandler.zeroCrossCnt);
+                switchPhase = bldcSensorlessEstSpeed(bldcSensorHandler.floatingPhaseX_Voltage,bldcSensorHandler.busVoltage);
                 if(bldcSensorlessHandler.switchPhaseSignal == -switchPhase){
                     bldcSensorlessHandler.switchPhaseSignal = -bldcSensorlessHandler.switchPhaseSignal;
                     estSpeedFilter = 3.1415926f / 3.f / timeCost;
@@ -178,30 +172,53 @@ void bldc_HighFrequencyTask(void)
                     bldcSensorlessHandler.estSpeed = 0.05f * estSpeedFilter + bldcSensorlessHandler.estSpeed * 0.95f;
                     if(++tmp == 50){
                         tmp = 0u;
-                        setTargetAngularSpeed(bldcSensorlessHandler.estSpeed);
+                        bldcSysHandler.highSpeedTimeCnt = 0u;
+                        spPIController.finalTarget = spPIController.target = bldcSensorlessHandler.estSpeed;
                         bldcSensorlessHandler.forceAlignmentSector = (bldcSensorlessHandler.forceAlignmentSector + 1) % 6;
                         bldcSysHandler.bldcStu = eBLDC_CloseLoopRun;
                     }
                 }
                 break;
             case eBLDC_CloseLoopRun:
+                // if(bldcSensorlessHandler.forceAlignmentDir){
+                //     bldcSensorHandler.floatingPhaseX_Voltage = bldcSwitchPhaseTableList_Forward[bldcSensorlessHandler.forceAlignmentSector](bldcSensorlessHandler.forceAlignmentPwmDuty);
+                // }else{
+                //     bldcSensorHandler.floatingPhaseX_Voltage = bldcSwitchPhaseTableList_Reverse[bldcSensorlessHandler.forceAlignmentSector](bldcSensorlessHandler.forceAlignmentPwmDuty);
+                // }
+                // timeCost += bldcSysHandler.highSpeedClock;
+                // switchPhase = bldcSensorlessEstSpeed(bldcSensorHandler.floatingPhaseX_Voltage,bldcSensorHandler.busVoltage);
+                // if(bldcSensorlessHandler.switchPhaseSignal == -switchPhase){
+                //     bldcSensorlessHandler.switchPhaseSignal = -bldcSensorlessHandler.switchPhaseSignal;
+                //     estSpeedFilter = 3.1415926f / 3.f / timeCost;
+                //     timeCost = 0.f;       
+                //     bldcSensorlessHandler.estSpeed = 0.05f * estSpeedFilter + bldcSensorlessHandler.estSpeed * 0.95f;
+                //     bldcSensorlessHandler.forceAlignmentSector = (bldcSensorlessHandler.forceAlignmentSector + 1) % 6;
+                // }
+
+                // bldcSensorlessHandler.forceAlignmentPwmDuty = speedPIController(bldcSensorlessHandler.estSpeed);
+
                 if(bldcSensorlessHandler.forceAlignmentDir){
                     bldcSensorHandler.floatingPhaseX_Voltage = bldcSwitchPhaseTableList_Forward[bldcSensorlessHandler.forceAlignmentSector](bldcSensorlessHandler.forceAlignmentPwmDuty);
-                    // bldcSensorHandler.floatingPhaseX_Voltage = bldc_GetBEMF();
                 }else{
                     bldcSensorHandler.floatingPhaseX_Voltage = bldcSwitchPhaseTableList_Reverse[bldcSensorlessHandler.forceAlignmentSector](bldcSensorlessHandler.forceAlignmentPwmDuty);
-                    // bldcSensorHandler.floatingPhaseX_Voltage = bldc_GetBEMF();
                 }
                 timeCost += bldcSysHandler.highSpeedClock;
-                switchPhase = bldcSensorlessEstSpeed(bldcSensorHandler.floatingPhaseX_Voltage,bldcSensorHandler.busVoltage,&bldcSensorlessHandler.zeroCrossCnt);
+                switchPhase = bldcSensorlessEstSpeed(bldcSensorHandler.floatingPhaseX_Voltage,bldcSensorHandler.busVoltage);
                 if(bldcSensorlessHandler.switchPhaseSignal == -switchPhase){
+                    tmp++;
                     bldcSensorlessHandler.switchPhaseSignal = -bldcSensorlessHandler.switchPhaseSignal;
-                    estSpeedFilter = 3.1415926f / 3.f / timeCost;
                     timeCost = 0.f;       
-                    bldcSensorlessHandler.estSpeed = 0.05f * estSpeedFilter + bldcSensorlessHandler.estSpeed * 0.95f;
                     bldcSensorlessHandler.forceAlignmentSector = (bldcSensorlessHandler.forceAlignmentSector + 1) % 6;
                 }
-                bldcSensorlessHandler.forceAlignmentPwmDuty = speedPIController(bldcSensorlessHandler.estSpeed);
+
+                if(bldcSysHandler.highSpeedTimeCnt++ == 19){
+                    estSpeedFilter = (f32_t)tmp * 3.1415926f / 3.f / 0.001f;
+                    tmp = 0u;
+                    bldcSysHandler.highSpeedTimeCnt = 0;
+                    bldcSensorlessHandler.estSpeed = 0.05f * estSpeedFilter + bldcSensorlessHandler.estSpeed * 0.95f;
+                    bldcSensorlessHandler.forceAlignmentPwmDuty = speedPIController(bldcSensorlessHandler.estSpeed);
+                }
+
                 excuteUserCMD();
                 break;
             default:

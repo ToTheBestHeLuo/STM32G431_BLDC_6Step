@@ -2,7 +2,7 @@
  * @Author: error: error: git config user.name & please set dead value or install git && error: git config user.email & please set dead value or install git & please set dead value or install git
  * @Date: 2024-08-24 15:08:50
  * @LastEditors: ToTheBestHeLuo 2950083986@qq.com
- * @LastEditTime: 2024-09-25 15:43:37
+ * @LastEditTime: 2024-11-06 21:24:50
  * @FilePath: \MDK-ARMd:\stm32cube\stm32g431cbu6_BLDC\BLDC\include\bldcType.h
  * @Description: 
  * 
@@ -32,11 +32,9 @@ typedef enum{
 
 typedef struct 
 {
-    BLDC_CMD_Status userCmd;
-    f32_t finalTarget,acc,timeCost;
     f32_t limitMax,limitMin;
     f32_t kP,kI,integrator;
-    f32_t out,target;
+    f32_t out,target,finalTarget;
 }PIController;
 
 typedef struct{
@@ -50,7 +48,6 @@ typedef struct{
 
 typedef struct{
     int8_t switchPhaseSignal;
-    int8_t zeroCrossCnt,zeroCrossSignal;
     uint8_t forceAlignmentSector,forceAlignmentDir;
     uint16_t forceAlignmentPwmDuty,forceAlignmentTime;
     f32_t estSpeed;
@@ -104,6 +101,8 @@ typedef struct
     BLDC_SysStateMachine sysStu;
     BLDC_SysErrorStatus sysError;
     BLDC_RunStateMachine bldcStu;
+
+    uint16_t debug;
 }BLDC_System_Handler;
 
 #endif

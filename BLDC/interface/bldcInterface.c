@@ -2,7 +2,7 @@
  * @Author: error: error: git config user.name & please set dead value or install git && error: git config user.email & please set dead value or install git & please set dead value or install git
  * @Date: 2024-08-24 15:11:02
  * @LastEditors: ToTheBestHeLuo 2950083986@qq.com
- * @LastEditTime: 2024-09-25 15:59:04
+ * @LastEditTime: 2024-11-07 13:06:39
  * @FilePath: \MDK-ARMd:\stm32cube\stm32g431cbu6_BLDC\BLDC\interface\bldcInterface.c
  * @Description: 
  * 
@@ -11,7 +11,8 @@
 #include "../include/bldcInterface.h"
 #include "../include/bldcTask.h"
 #include "../include/bldcSensorless.h"
-#include "usbd_cdc_if.h"
+#include "dShoot.h"
+//#include "usbd_cdc_if.h"
 #include "main.h"
 
 void bldc_LowFrequencyTaskCallBack(void)
@@ -20,35 +21,36 @@ void bldc_LowFrequencyTaskCallBack(void)
         LL_GPIO_TogglePin(GPIOC,LL_GPIO_PIN_14);
         LL_GPIO_TogglePin(GPIOC,LL_GPIO_PIN_15);
     }
-    static uint16_t index = 0u;
-    uint16_t index1 = index % sizeof(UserRxBufferFS);
-    uint16_t index2 = (index + 1) % sizeof(UserRxBufferFS);
-    uint16_t index3 = (index + 2) % sizeof(UserRxBufferFS);
-    uint16_t index4 = (index + 3) % sizeof(UserRxBufferFS);
-    if(UserRxBufferFS[index1] == 'S' && UserRxBufferFS[index2] == ':' && UserRxBufferFS[index4] == '\n'){
-        uint16_t receiveDat = UserRxBufferFS[index3] * 6.f;
-        setTargetRotationFrequencyWithACC(receiveDat,6.f);
-        UserRxBufferFS[index1] = UserRxBufferFS[index2] = '\0';
-        UserRxBufferFS[index3] = UserRxBufferFS[index4] = '\0';
-    }
-    index++;
+    // static uint16_t index = 0u;
+    // uint16_t index1 = index % sizeof(UserRxBufferFS);
+    // uint16_t index2 = (index + 1) % sizeof(UserRxBufferFS);
+    // uint16_t index3 = (index + 2) % sizeof(UserRxBufferFS);
+    // uint16_t index4 = (index + 3) % sizeof(UserRxBufferFS);
+    // if(UserRxBufferFS[index1] == 'S' && UserRxBufferFS[index2] == ':' && UserRxBufferFS[index4] == '\n'){
+    //     uint16_t receiveDat = UserRxBufferFS[index3] * 6.f;
+    //     spPIController.finalTarget = (f32_t)receiveDat * 2.f * 3.1415926f;
+    //     UserRxBufferFS[index1] = UserRxBufferFS[index2] = '\0';
+    //     UserRxBufferFS[index3] = UserRxBufferFS[index4] = '\0';
+    // }
+    // index++;
+		spPIController.finalTarget = (f32_t)bldcSysHandler.debug * 2.f * 3.1415926f;
 }
 
 void bldc_HighFrequencyTaskCallBack(void)
 {
-    struct bufToSend
-    {
-      float dat0,dat1,dat2,dat3,dat4,dat5;
-      uint8_t tail[4];
-    }buf = {
-        bldcSensorlessHandler.estSpeed,
-        bldcSensorlessHandler.forceAlignmentSector,
-        bldcSensorHandler.busCurrent,
-        bldcSensorHandler.driverTemp,
-        bldcSensorHandler.busVoltage / 2.f,
-        bldcSensorHandler.floatingPhaseX_Voltage,
-        0x00,0x00,0x80,0x7f};
-    CDC_Transmit_FS((uint8_t*)&buf,sizeof(buf));
+//    struct bufToSend
+//    {
+//      float dat0,dat1,dat2,dat3,dat4,dat5;
+//      uint8_t tail[4];
+//    }buf = {
+//        spPIController.out,
+//        spPIController.finalTarget,
+//        bldcSensorlessHandler.estSpeed,
+//        bldcSensorHandler.driverTemp,
+//        bldcSensorHandler.busVoltage / 2.f,
+//        bldcSensorHandler.floatingPhaseX_Voltage,
+//        0x00,0x00,0x80,0x7f};
+//    CDC_Transmit_FS((uint8_t*)&buf,sizeof(buf));
 }
 
 static uint16_t keyCnt = 0u;
@@ -58,6 +60,7 @@ int8_t bldc_GetButtonStatus(void)
     uint32_t keySignal = LL_GPIO_ReadInputPort(GPIOA) & (LL_GPIO_PIN_3);
     if(keySignal == 0u && keyCnt++ > 300){
         keyCnt = 0;
+				LL_TIM_EnableIT_CC3(TIM4);
         return 1;
     }else if(keySignal) 
         keyCnt = 0;
@@ -130,19 +133,43 @@ void bldc_PWM_LowSides_ON_OFF_OFF(void)
 f32_t bldc_BEMF_Get_U(void)
 {
     LL_ADC_INJ_SetSequencerRanks(ADC2, LL_ADC_INJ_RANK_1, LL_ADC_CHANNEL_3);
-    return (f32_t)LL_ADC_INJ_ReadConversionData12(ADC2,LL_ADC_INJ_RANK_1) / 4096.f * 3.3f * 401.f;
+    LL_ADC_INJ_SetSequencerRanks(ADC2, LL_ADC_INJ_RANK_2, LL_ADC_CHANNEL_3);
+    LL_ADC_INJ_SetSequencerRanks(ADC2, LL_ADC_INJ_RANK_3, LL_ADC_CHANNEL_3);
+    LL_ADC_INJ_SetSequencerRanks(ADC2, LL_ADC_INJ_RANK_4, LL_ADC_CHANNEL_3);
+
+    f32_t res = (f32_t)LL_ADC_INJ_ReadConversionData12(ADC2,LL_ADC_INJ_RANK_1) + \
+                (f32_t)LL_ADC_INJ_ReadConversionData12(ADC2,LL_ADC_INJ_RANK_2) + \
+                (f32_t)LL_ADC_INJ_ReadConversionData12(ADC2,LL_ADC_INJ_RANK_3) + \
+                (f32_t)LL_ADC_INJ_ReadConversionData12(ADC2,LL_ADC_INJ_RANK_4);
+
+    return res / 4096.f * 3.3f * 401.f / 4.f;
 }
 
 f32_t bldc_BEMF_Get_V(void)
 {
     LL_ADC_INJ_SetSequencerRanks(ADC2, LL_ADC_INJ_RANK_1, LL_ADC_CHANNEL_5);
-    return (f32_t)LL_ADC_INJ_ReadConversionData12(ADC2,LL_ADC_INJ_RANK_1) / 4096.f * 3.3f * 401.f;
+    LL_ADC_INJ_SetSequencerRanks(ADC2, LL_ADC_INJ_RANK_2, LL_ADC_CHANNEL_5);
+    LL_ADC_INJ_SetSequencerRanks(ADC2, LL_ADC_INJ_RANK_3, LL_ADC_CHANNEL_5);
+    LL_ADC_INJ_SetSequencerRanks(ADC2, LL_ADC_INJ_RANK_4, LL_ADC_CHANNEL_5);
+    f32_t res = (f32_t)LL_ADC_INJ_ReadConversionData12(ADC2,LL_ADC_INJ_RANK_1) + \
+                (f32_t)LL_ADC_INJ_ReadConversionData12(ADC2,LL_ADC_INJ_RANK_2) + \
+                (f32_t)LL_ADC_INJ_ReadConversionData12(ADC2,LL_ADC_INJ_RANK_3) + \
+                (f32_t)LL_ADC_INJ_ReadConversionData12(ADC2,LL_ADC_INJ_RANK_4);
+
+    return res / 4096.f * 3.3f * 401.f / 4.f;
 }
 
 f32_t bldc_BEMF_Get_W(void)
 {
     LL_ADC_INJ_SetSequencerRanks(ADC2, LL_ADC_INJ_RANK_1, LL_ADC_CHANNEL_14);
-    return (f32_t)LL_ADC_INJ_ReadConversionData12(ADC2,LL_ADC_INJ_RANK_1) / 4096.f * 3.3f * 401.f;
+    LL_ADC_INJ_SetSequencerRanks(ADC2, LL_ADC_INJ_RANK_2, LL_ADC_CHANNEL_14);
+    LL_ADC_INJ_SetSequencerRanks(ADC2, LL_ADC_INJ_RANK_3, LL_ADC_CHANNEL_14);
+    LL_ADC_INJ_SetSequencerRanks(ADC2, LL_ADC_INJ_RANK_4, LL_ADC_CHANNEL_14);
+    f32_t res = (f32_t)LL_ADC_INJ_ReadConversionData12(ADC2,LL_ADC_INJ_RANK_1) + \
+                (f32_t)LL_ADC_INJ_ReadConversionData12(ADC2,LL_ADC_INJ_RANK_2) + \
+                (f32_t)LL_ADC_INJ_ReadConversionData12(ADC2,LL_ADC_INJ_RANK_3) + \
+                (f32_t)LL_ADC_INJ_ReadConversionData12(ADC2,LL_ADC_INJ_RANK_4);
+    return res / 4096.f * 3.3f * 401.f / 4.f;
 }
 
 f32_t bldc_StartPWM_UH_VL_GetWF(uint16_t pwmDuty)
@@ -258,7 +285,7 @@ f32_t bldc_GetDriverTemp(void)
 
 f32_t bldc_GetBusCurrentAndSetNextSamplingPosition(uint16_t samplingPositionCnt)
 {   
-    f32_t busCurrent = (-1.65f + (float)LL_ADC_INJ_ReadConversionData12(ADC1,LL_ADC_INJ_RANK_1) / 4096.f * 3.3f) / 0.005f / 10.f;
+		f32_t busCurrent = (-1.65f + (float)LL_ADC_INJ_ReadConversionData12(ADC1,LL_ADC_INJ_RANK_1) / 4096.f * 3.3f) / 0.005f / 10.f;
     LL_TIM_OC_SetCompareCH4(TIM1,samplingPositionCnt);
     return busCurrent;
 }

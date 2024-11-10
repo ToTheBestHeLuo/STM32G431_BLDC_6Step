@@ -15,6 +15,8 @@
         "xstring": "c",
         "xutility": "c",
         "bldcmath.h": "c",
-        "usbd_cdc_if.h": "c"
+        "usbd_cdc_if.h": "c",
+        "dshot.h": "c",
+        "dshoot.h": "c"
     }
 }

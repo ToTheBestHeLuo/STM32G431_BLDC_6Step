@@ -23,6 +23,7 @@
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
 #include "bldcTask.h"
+#include "dShoot.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -56,7 +57,7 @@
 /* USER CODE END 0 */
 
 /* External variables --------------------------------------------------------*/
-extern PCD_HandleTypeDef hpcd_USB_FS;
+
 /* USER CODE BEGIN EV */
 
 /* USER CODE END EV */
@@ -186,8 +187,9 @@ void SysTick_Handler(void)
   /* USER CODE BEGIN SysTick_IRQn 0 */
 
   /* USER CODE END SysTick_IRQn 0 */
-  HAL_IncTick();
+
   /* USER CODE BEGIN SysTick_IRQn 1 */
+
   bldc_SafetyTask();
   /* USER CODE END SysTick_IRQn 1 */
 }
@@ -200,13 +202,33 @@ void SysTick_Handler(void)
 /******************************************************************************/
 
 /**
+  * @brief This function handles DMA1 channel1 global interrupt.
+  */
+void DMA1_Channel1_IRQHandler(void)
+{
+  /* USER CODE BEGIN DMA1_Channel1_IRQn 0 */
+  if(LL_DMA_IsActiveFlag_TC1(DMA1)){
+    LL_DMA_ClearFlag_TC1(DMA1);
+		LL_DMA_DisableIT_TC(DMA1,LL_DMA_CHANNEL_1);
+    uint16_t dat = dShoot_ReceiveValueWithDMA();
+    if(dat != 0x0000) bldcSysHandler.debug = dat;
+    LL_TIM_EnableIT_CC3(TIM4);
+
+  }
+  /* USER CODE END DMA1_Channel1_IRQn 0 */
+
+  /* USER CODE BEGIN DMA1_Channel1_IRQn 1 */
+
+  /* USER CODE END DMA1_Channel1_IRQn 1 */
+}
+
+/**
   * @brief This function handles ADC1 and ADC2 global interrupt.
   */
 void ADC1_2_IRQHandler(void)
 {
   /* USER CODE BEGIN ADC1_2_IRQn 0 */
-  if(LL_ADC_IsActiveFlag_JEOS(ADC1) && LL_ADC_IsActiveFlag_JEOS(ADC2)){
-    LL_ADC_ClearFlag_JEOS(ADC1);
+  if(LL_ADC_IsActiveFlag_JEOS(ADC2)){
     LL_ADC_ClearFlag_JEOS(ADC2);
     bldc_HighFrequencyTask();
   }
@@ -218,17 +240,25 @@ void ADC1_2_IRQHandler(void)
 }
 
 /**
-  * @brief This function handles USB low priority interrupt remap.
+  * @brief This function handles TIM4 global interrupt.
   */
-void USB_LP_IRQHandler(void)
+void TIM4_IRQHandler(void)
 {
-  /* USER CODE BEGIN USB_LP_IRQn 0 */
+  /* USER CODE BEGIN TIM4_IRQn 0 */
+  if(LL_TIM_IsActiveFlag_CC3(TIM4)){
+		LL_GPIO_SetOutputPin(GPIOA,LL_GPIO_PIN_2);
+    LL_TIM_ClearFlag_CC3(TIM4);
+    LL_TIM_DisableIT_CC3(TIM4);
+		LL_DMA_EnableIT_TC(DMA1,LL_DMA_CHANNEL_1);
+    LL_DMA_DisableChannel(DMA1,LL_DMA_CHANNEL_1);
+    LL_DMA_SetDataLength(DMA1,LL_DMA_CHANNEL_1,16);
+    LL_DMA_EnableChannel(DMA1,LL_DMA_CHANNEL_1);
+		LL_GPIO_ResetOutputPin(GPIOA,LL_GPIO_PIN_2);
+  }
+  /* USER CODE END TIM4_IRQn 0 */
+  /* USER CODE BEGIN TIM4_IRQn 1 */
 
-  /* USER CODE END USB_LP_IRQn 0 */
-  HAL_PCD_IRQHandler(&hpcd_USB_FS);
-  /* USER CODE BEGIN USB_LP_IRQn 1 */
-
-  /* USER CODE END USB_LP_IRQn 1 */
+  /* USER CODE END TIM4_IRQn 1 */
 }
 
 /* USER CODE BEGIN 1 */

@@ -16,15 +16,8 @@
 extern PIController spPIController;
 
 extern uint16_t speedPIController(f32_t spNow);
-extern f32_t getTargetRotationFrequency(void);
-
-extern void setTargetRotationFrequency(f32_t target);
-extern void setTargetAngularSpeed(f32_t target);
-
-extern void setTargetRotationFrequencyWithACC(f32_t target,f32_t timeNeed);
 extern void excuteUserCMD(void);
-extern f32_t getTargetAngularSpeed(void);
-extern int8_t bldcSensorlessEstSpeed(f32_t floatingPhaseVoltage,f32_t busVoltage,int8_t* zeroCrossCnt);
+extern int8_t bldcSensorlessEstSpeed(f32_t floatingPhaseVoltage,f32_t busVoltage);
 
 #endif
 
